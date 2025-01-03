@@ -1,6 +1,6 @@
 # src/lexer/tokens.py
 
-# List of token names. This is always required
+# List of token names. This is always required by PLY
 tokens = [
     # Operators
     'PLUS',
@@ -22,7 +22,6 @@ tokens = [
     'INT_LITERAL',
     'FLOAT_LITERAL',
     
-    # Comparison Operators (to be added later)
     # Comparison Operators
     'LT',    # <
     'GT',    # >
@@ -30,18 +29,6 @@ tokens = [
     'GE',    # >=
     'EQ',    # ==
     'NE',    # !=
-
-    # # Add Logical Operators
-    # 'AND',    # &&
-    # 'OR',     # ||
-    # 'NOT',    # !
-
-    # # String and Character Literals
-    # 'STRING_LITERAL',
-    # 'CHAR_LITERAL',
-
-
-
 ]
 
 # Reserved words mapping

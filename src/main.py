@@ -1,8 +1,9 @@
 # src/main.py
 
 import sys
-from lexer import tokenize
-from parser import parse
+from lexer import tokenize, symbol_table  # Import the lexer and symbol table
+from parser import parse_tokens  # Import the parser
+from utils.ast_visualizer import ASTVisualizer
 
 def main():
     if len(sys.argv) != 2:
@@ -26,10 +27,18 @@ def main():
         print(f"Type: {tok.type}, Value: {tok.value}, Line: {tok.lineno}")
 
     print("\n--- Syntax Analysis ---")
-    ast = parse(tokens_list)
+    ast = parse_tokens(tokens_list)
 
     print("\nAbstract Syntax Tree (AST):")
     print(ast)
+
+    # Visualize the AST
+    print("\n--- AST Visualization ---")
+    visualizer = ASTVisualizer()
+    visualizer.visualize(ast, output_filename='ast_output')  # You can change the filename as needed
+
+    # Display the Symbol Table
+    symbol_table.display()
 
 if __name__ == '__main__':
     main()

@@ -1,23 +1,36 @@
 # src/parser/parser.py
 
 import ply.yacc as yacc
-from lexer.tokenizer import tokens  # Import tokens from lexer
-from .ast_nodes import *
-
-# Precedence rules to resolve ambiguities
-precedence = (
-    ('left', 'EQ', 'NE'),
-    ('left', 'LT', 'LE', 'GT', 'GE'),
-    ('left', 'PLUS', 'MINUS'),
-    ('left', 'MULTIPLY', 'DIVIDE'),
-    ('right', 'UMINUS'),
+from lexer.tokens import tokens  # Import tokens list from lexer/tokens.py
+from .ast_nodes import (
+    Program,
+    FunctionDeclaration,
+    VariableDeclaration,
+    IfStatement,
+    ReturnStatement,
+    BinaryOperation,
+    UnaryOperation,
+    Identifier,
+    Literal,
+    CompoundStatement
 )
 
-# Define the grammar rules
+# Define precedence rules to resolve ambiguities
+precedence = (
+    ('left', 'EQ', 'NE'),              # Equality operators
+    ('left', 'LT', 'LE', 'GT', 'GE'),   # Relational operators
+    ('left', 'PLUS', 'MINUS'),         # Addition and subtraction
+    ('left', 'MULTIPLY', 'DIVIDE'),    # Multiplication and division
+    ('right', 'UMINUS'),               # Unary minus
+)
+
+# Dictionary to hold all AST nodes (optional, can be used for tracking)
+ast_nodes = []
 
 def p_program(p):
     """program : declarations"""
     p[0] = Program(p[1])
+    ast_nodes.append(p[0])
 
 def p_declarations(p):
     """declarations : declarations declaration
@@ -35,10 +48,13 @@ def p_declaration(p):
 def p_var_declaration(p):
     """var_declaration : type_specifier IDENTIFIER SEMICOLON
                        | type_specifier IDENTIFIER ASSIGN expression SEMICOLON"""
+    var_type = p[1]
+    var_name = p[2]
     if len(p) == 4:
-        p[0] = VariableDeclaration(var_type=p[1], name=p[2])
+        initializer = None
     else:
-        p[0] = VariableDeclaration(var_type=p[1], name=p[2], initializer=p[4])
+        initializer = p[4]
+    p[0] = VariableDeclaration(var_type=var_type, name=var_name, initializer=initializer)
 
 def p_type_specifier(p):
     """type_specifier : INT
@@ -47,12 +63,16 @@ def p_type_specifier(p):
 
 def p_func_declaration(p):
     """func_declaration : type_specifier IDENTIFIER LPAREN params RPAREN compound_stmt"""
-    p[0] = FunctionDeclaration(return_type=p[1], name=p[2], params=p[4], body=p[6])
+    return_type = p[1]
+    func_name = p[2]
+    params = p[4]
+    body = p[6]
+    p[0] = FunctionDeclaration(return_type=return_type, name=func_name, params=params, body=body)
 
 def p_params(p):
     """params : param_list
               | empty"""
-    p[0] = p[1]
+    p[0] = p[1] if p[1] is not None else []
 
 def p_param_list(p):
     """param_list : param_list COMMA param
@@ -64,7 +84,9 @@ def p_param_list(p):
 
 def p_param(p):
     """param : type_specifier IDENTIFIER"""
-    p[0] = VariableDeclaration(var_type=p[1], name=p[2])
+    var_type = p[1]
+    var_name = p[2]
+    return VariableDeclaration(var_type=var_type, name=var_name)
 
 def p_compound_stmt(p):
     """compound_stmt : LBRACE stmt_list RBRACE"""
@@ -89,14 +111,15 @@ def p_statement(p):
 def p_if_stmt(p):
     """if_stmt : IF LPAREN expression RPAREN statement
                | IF LPAREN expression RPAREN statement ELSE statement"""
-    if len(p) == 6:
-        p[0] = IfStatement(condition=p[3], then_branch=p[5])
-    else:
-        p[0] = IfStatement(condition=p[3], then_branch=p[5], else_branch=p[7])
+    condition = p[3]
+    then_branch = p[5]
+    else_branch = p[7] if len(p) > 6 else None
+    p[0] = IfStatement(condition=condition, then_branch=then_branch, else_branch=else_branch)
 
 def p_return_stmt(p):
     """return_stmt : RETURN expression SEMICOLON"""
-    p[0] = ReturnStatement(expression=p[2])
+    expr = p[2]
+    p[0] = ReturnStatement(expression=expr)
 
 def p_expr_stmt(p):
     """expr_stmt : expression SEMICOLON"""
@@ -107,18 +130,21 @@ def p_expression_binop(p):
                   | expression MINUS expression
                   | expression MULTIPLY expression
                   | expression DIVIDE expression
-                  | expression ASSIGN expression
                   | expression LT expression
-                  | expression LE expression
                   | expression GT expression
+                  | expression LE expression
                   | expression GE expression
                   | expression EQ expression
                   | expression NE expression"""
-    p[0] = BinaryOperation(left=p[1], operator=p[2], right=p[3])
+    left = p[1]
+    operator = p[2]
+    right = p[3]
+    p[0] = BinaryOperation(left=left, operator=operator, right=right)
 
 def p_expression_uminus(p):
     """expression : MINUS expression %prec UMINUS"""
-    p[0] = UnaryOperation(operator='-', operand=p[2])
+    operand = p[2]
+    p[0] = UnaryOperation(operator='-', operand=operand)
 
 def p_expression_group(p):
     """expression : LPAREN expression RPAREN"""
@@ -135,7 +161,7 @@ def p_expression_identifier(p):
 
 def p_empty(p):
     """empty :"""
-    p[0] = None
+    pass
 
 def p_error(p):
     if p:
@@ -146,23 +172,24 @@ def p_error(p):
 # Build the parser
 parser = yacc.yacc()
 
-# Function to parse tokens and build AST
 def parse_tokens(tokens_list):
-    # Convert tokens to a format suitable for PLY
-    lexer = LexerFromTokens(tokens_list)
-    return parser.parse(lexer=lexer)
+    """
+    Parse the list of tokens and return the AST.
+    """
+    from collections import deque
 
-class LexerFromTokens:
-    """A mock lexer that feeds tokens from a list to the parser."""
+    token_queue = deque(tokens_list)
 
-    def __init__(self, tokens_list):
-        self.tokens = tokens_list
-        self.index = 0
+    class TokenLexer:
+        def __init__(self, tokens):
+            self.tokens = tokens
 
-    def token(self):
-        if self.index < len(self.tokens):
-            tok = self.tokens[self.index]
-            self.index += 1
-            return tok
-        else:
-            return None
+        def token(self):
+            if self.tokens:
+                return self.tokens.popleft()
+            else:
+                return None
+
+    lexer = TokenLexer(token_queue)
+    ast = parser.parse(lexer=lexer)
+    return ast
