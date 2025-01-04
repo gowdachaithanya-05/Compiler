@@ -28,4 +28,4 @@ pip install -r requirements.txt
 
 Run the main script with a sample C code file as input:
 ```bash
-python src/main.py data/sample_c_codes/example1.c
+python src/main.py data/sample_c_codes/example1.c // can give any example of c code under data folder
