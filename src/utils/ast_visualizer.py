@@ -11,7 +11,8 @@ from parser.ast_nodes import (
     UnaryOperation,
     Identifier,
     Literal,
-    CompoundStatement
+    CompoundStatement,
+    FunctionCall  
 )
 
 class ASTVisualizer:
@@ -80,6 +81,11 @@ class ASTVisualizer:
 
         elif isinstance(node, UnaryOperation):
             self.visit(node.operand, node)
+
+        elif isinstance(node, FunctionCall):  # Add handling for FunctionCall
+            self.visit(node.name, node)
+            for arg in node.args:
+                self.visit(arg, node)
 
         elif isinstance(node, Identifier):
             pass  # Leaf node
