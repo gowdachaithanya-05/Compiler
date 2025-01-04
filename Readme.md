@@ -2,7 +2,7 @@
 
 ## Gamified Debugger
 
-This project implements a gamified debugger for lexical analysis in a compiler.
+This project implements a gamified debugger for lexical analysis and syntax analysis in a compiler.
 
 ## Procedure to Run the Code
 
