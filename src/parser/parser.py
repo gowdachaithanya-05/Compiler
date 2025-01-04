@@ -2,6 +2,9 @@
 
 import ply.yacc as yacc
 from lexer.tokens import tokens  # Import tokens list from lexer/tokens.py
+
+from lexer.error_handler import error_handler  # Import the error handler
+
 from .ast_nodes import (
     Program,
     FunctionDeclaration,
@@ -182,12 +185,19 @@ def p_empty(p):
     """empty :"""
     p[0] = None  # Explicitly set to None for clarity
 
+# def p_error(p):
+#     if p:
+#         column = getattr(p, 'column', 'Unknown')  # Safely get 'column' attribute
+#         print(f"Syntax error at token '{p.value}', line {p.lineno}, column {column}")
+#     else:
+#         print("Syntax error at EOF")
+
 def p_error(p):
     if p:
         column = getattr(p, 'column', 'Unknown')  # Safely get 'column' attribute
-        print(f"Syntax error at token '{p.value}', line {p.lineno}, column {column}")
+        error_handler.add_error('Syntax', f"Syntax error at token '{p.value}'", p.lineno, column)
     else:
-        print("Syntax error at EOF")
+        error_handler.add_error('Syntax', "Syntax error at EOF", '?', '?')
 
 # Build the parser
 parser = yacc.yacc()

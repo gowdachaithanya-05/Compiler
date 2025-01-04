@@ -4,6 +4,9 @@ import ply.lex as lex
 from .symbol_table import SymbolTable
 from .tokens import tokens  # Import tokens list from tokens.py
 
+from .error_handler import error_handler  # Import the error handler
+
+
 # Initialize the symbol table
 symbol_table = SymbolTable()
 
@@ -76,7 +79,7 @@ def t_comment_multiline(t):
 # Error handling rule
 def t_error(t):
     column = find_column(t.lexer.lexdata, t)
-    print(f"Illegal character '{t.value[0]}' at line {t.lineno}, column {column}")
+    error_handler.add_error('Lexical', f"Illegal character '{t.value[0]}'", t.lineno, column)
     t.lexer.skip(1)
 
 # Compute column numbers

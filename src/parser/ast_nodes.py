@@ -275,6 +275,18 @@ class CompoundStatement(ASTNode):
     def __repr__(self):
         return f"CompoundStatement(statements={self.statements})"
 
+# class FunctionCall(ASTNode):
+#     def __init__(self, name, args):
+#         super().__init__()
+#         self.name = name  # Should be an Identifier instance
+#         self.args = args  # List of expressions
+
+#     def get_label(self):
+#         return f"FunctionCall\n{self.name.name}"
+
+#     def __repr__(self):
+#         return f"FunctionCall(name={self.name}, args={self.args})"
+
 class FunctionCall(ASTNode):
     def __init__(self, name, args):
         super().__init__()

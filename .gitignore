@@ -1,0 +1,53 @@
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore parser generated files
+src/parser/parser.out
+src/parser/parsetab.py
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore virtual environment files
+venv/
+env/
+ENV/
+
+# Ignore build and distribution files
+build/
+dist/
+*.egg-info/
+
+# Ignore log files
+*.log
+
+# # Ignore data files (if not meant to be tracked)
+# data/errors.json
+# data/symbol_table.json
+
+# # Ignore output files
+# output/
+
+# Ignore test output files
+tests/__pycache__/
+tests/test_analyzer/__pycache__/
+tests/test_lexer/__pycache__/
+tests/test_parser/__pycache__/
+tests/test_utils/__pycache__/
+
+# Ignore local configuration files
+*.local
+*.env
+.env
+
+# Ignore Windows system files
+Thumbs.db
+
+# Ignore all __pycache__ directories 
+__pycache__/
+src/lexer/__pycache__/
+src/parser/__pycache__/
+src/utils/__pycache__/
