@@ -4,6 +4,9 @@ import sys
 from lexer import tokenize, symbol_table  # Import the lexer and symbol table
 from parser import parse_tokens  # Import the parser
 from utils.ast_visualizer import ASTVisualizer
+import os
+
+file_path_for_symbol_table = os.path.join(os.getcwd(), "output/symbol_table.json")
 
 def main():
     if len(sys.argv) != 2:
@@ -39,6 +42,8 @@ def main():
 
     # Display the Symbol Table
     symbol_table.display()
+
+    symbol_table.export_to_json(file_path_for_symbol_table)
 
 if __name__ == '__main__':
     main()
