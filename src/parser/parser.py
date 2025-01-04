@@ -10,6 +10,7 @@ from .ast_nodes import (
     ReturnStatement,
     BinaryOperation,
     UnaryOperation,
+    FunctionCall,  # Added
     Identifier,
     Literal,
     CompoundStatement
@@ -159,13 +160,32 @@ def p_expression_identifier(p):
     """expression : IDENTIFIER"""
     p[0] = Identifier(name=p[1])
 
+def p_expression_call(p):
+    """expression : IDENTIFIER LPAREN arg_list RPAREN"""
+    p[0] = FunctionCall(name=Identifier(p[1]), args=p[3])
+
+def p_arg_list(p):
+    """arg_list : arg_list COMMA expression
+                | expression
+                | empty"""
+    if len(p) == 4:
+        p[0] = p[1] + [p[3]]
+    elif len(p) == 2:
+        if p[1] is None:
+            p[0] = []
+        else:
+            p[0] = [p[1]]
+    else:
+        p[0] = []
+
 def p_empty(p):
     """empty :"""
-    pass
+    p[0] = None  # Explicitly set to None for clarity
 
 def p_error(p):
     if p:
-        print(f"Syntax error at token '{p.value}', line {p.lineno}")
+        column = getattr(p, 'column', 'Unknown')  # Safely get 'column' attribute
+        print(f"Syntax error at token '{p.value}', line {p.lineno}, column {column}")
     else:
         print("Syntax error at EOF")
 
