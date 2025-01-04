@@ -27,7 +27,7 @@ def main():
 
     print("\nTokens:")
     for tok in tokens_list:
-        print(f"Type: {tok.type}, Value: {tok.value}, Line: {tok.lineno}")
+        print(f"Type: {tok.type}, Value: {tok.value}, Line: {tok.lineno}, Column: {tok.column}")
 
     print("\n--- Syntax Analysis ---")
     ast = parse_tokens(tokens_list)
