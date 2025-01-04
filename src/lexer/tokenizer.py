@@ -2,10 +2,8 @@
 
 import ply.lex as lex
 from .symbol_table import SymbolTable
-from .tokens import tokens  # Import tokens list from tokens.py
-
-from .error_handler import error_handler  # Import the error handler
-
+from .tokens import tokens, reserved  # Import both tokens and reserved
+from .error_handler import error_handler
 
 # Initialize the symbol table
 symbol_table = SymbolTable()

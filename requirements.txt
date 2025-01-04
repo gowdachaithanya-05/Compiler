@@ -1,3 +1,3 @@
-ply==3.11
-graphviz 
-
+fastapi==0.95.0
+uvicorn==0.22.0
+python-multipart==0.0.6

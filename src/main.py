@@ -56,12 +56,13 @@ from parser import parse_tokens  # Import the parser
 from utils.ast_visualizer import ASTVisualizer
 from lexer.error_handler import error_handler  # Import the error handler
 import os
+import json
 
 file_path_for_symbol_table = os.path.join(os.getcwd(), "output/symbol_table.json")
 
 def main():
     if len(sys.argv) != 2:
-        print("Usage: python main.py <path_to_c_file>")
+        print("Usage: python main.py <path_to_code_file>")
         sys.exit(1)
 
     file_path = sys.argv[1]
@@ -90,7 +91,7 @@ def main():
         # Visualize the AST
         print("\n--- AST Visualization ---")
         visualizer = ASTVisualizer()
-        visualizer.visualize(ast, output_filename='ast_output')  # You can change the filename as needed
+        visualizer.visualize(ast, output_filename='ast_output')  # Saves as ast_output.png
     else:
         print("\nAST not generated due to syntax errors.")
 

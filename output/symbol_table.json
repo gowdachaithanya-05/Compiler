@@ -1,74 +1,4370 @@
 {
-    "int": {
-        "name": "int",
-        "type": "INT",
-        "line": 3,
-        "column": 1
-    },
-    "add": {
-        "name": "add",
+    "api_server": {
+        "name": "api_server",
         "type": "IDENTIFIER",
-        "line": 3,
-        "column": 5
-    },
-    "a": {
-        "name": "a",
-        "type": "IDENTIFIER",
-        "line": 3,
-        "column": 13
-    },
-    "b": {
-        "name": "b",
-        "type": "IDENTIFIER",
-        "line": 3,
-        "column": 20
-    },
-    "return": {
-        "name": "return",
-        "type": "RETURN",
-        "line": 4,
-        "column": 5
+        "line": 1,
+        "column": 3
     },
     "main": {
         "name": "main",
         "type": "IDENTIFIER",
+        "line": 1,
+        "column": 14
+    },
+    "py": {
+        "name": "py",
+        "type": "IDENTIFIER",
+        "line": 1,
+        "column": 19
+    },
+    "from": {
+        "name": "from",
+        "type": "IDENTIFIER",
+        "line": 3,
+        "column": 1
+    },
+    "fastapi": {
+        "name": "fastapi",
+        "type": "IDENTIFIER",
+        "line": 3,
+        "column": 6
+    },
+    "import": {
+        "name": "import",
+        "type": "IDENTIFIER",
+        "line": 3,
+        "column": 14
+    },
+    "FastAPI": {
+        "name": "FastAPI",
+        "type": "IDENTIFIER",
+        "line": 3,
+        "column": 21
+    },
+    "middleware": {
+        "name": "middleware",
+        "type": "IDENTIFIER",
+        "line": 4,
+        "column": 14
+    },
+    "cors": {
+        "name": "cors",
+        "type": "IDENTIFIER",
+        "line": 4,
+        "column": 25
+    },
+    "CORSMiddleware": {
+        "name": "CORSMiddleware",
+        "type": "IDENTIFIER",
+        "line": 4,
+        "column": 37
+    },
+    "routes": {
+        "name": "routes",
+        "type": "IDENTIFIER",
+        "line": 5,
+        "column": 7
+    },
+    "router": {
+        "name": "router",
+        "type": "IDENTIFIER",
+        "line": 5,
+        "column": 21
+    },
+    "app": {
+        "name": "app",
+        "type": "IDENTIFIER",
         "line": 7,
+        "column": 1
+    },
+    "title": {
+        "name": "title",
+        "type": "IDENTIFIER",
+        "line": 8,
+        "column": 5
+    },
+    "C": {
+        "name": "C",
+        "type": "IDENTIFIER",
+        "line": 8,
+        "column": 12
+    },
+    "Syntax": {
+        "name": "Syntax",
+        "type": "IDENTIFIER",
+        "line": 8,
+        "column": 14
+    },
+    "Adventure": {
+        "name": "Adventure",
+        "type": "IDENTIFIER",
+        "line": 8,
+        "column": 21
+    },
+    "Compiler": {
+        "name": "Compiler",
+        "type": "IDENTIFIER",
+        "line": 8,
+        "column": 31
+    },
+    "API": {
+        "name": "API",
+        "type": "IDENTIFIER",
+        "line": 8,
+        "column": 40
+    },
+    "description": {
+        "name": "description",
+        "type": "IDENTIFIER",
+        "line": 9,
+        "column": 5
+    },
+    "for": {
+        "name": "for",
+        "type": "IDENTIFIER",
+        "line": 9,
+        "column": 22
+    },
+    "compiling": {
+        "name": "compiling",
+        "type": "IDENTIFIER",
+        "line": 9,
+        "column": 26
+    },
+    "user": {
+        "name": "user",
+        "type": "IDENTIFIER",
+        "line": 9,
+        "column": 36
+    },
+    "submitted": {
+        "name": "submitted",
+        "type": "IDENTIFIER",
+        "line": 9,
+        "column": 41
+    },
+    "code": {
+        "name": "code",
+        "type": "IDENTIFIER",
+        "line": 9,
+        "column": 53
+    },
+    "and": {
+        "name": "and",
+        "type": "IDENTIFIER",
+        "line": 9,
+        "column": 58
+    },
+    "returning": {
+        "name": "returning",
+        "type": "IDENTIFIER",
+        "line": 9,
+        "column": 62
+    },
+    "results": {
+        "name": "results",
+        "type": "IDENTIFIER",
+        "line": 9,
+        "column": 72
+    },
+    "version": {
+        "name": "version",
+        "type": "IDENTIFIER",
+        "line": 10,
+        "column": 5
+    },
+    "Configure": {
+        "name": "Configure",
+        "type": "IDENTIFIER",
+        "line": 13,
+        "column": 3
+    },
+    "CORS": {
+        "name": "CORS",
+        "type": "IDENTIFIER",
+        "line": 13,
+        "column": 13
+    },
+    "to": {
+        "name": "to",
+        "type": "IDENTIFIER",
+        "line": 13,
+        "column": 18
+    },
+    "allow": {
+        "name": "allow",
+        "type": "IDENTIFIER",
+        "line": 13,
+        "column": 21
+    },
+    "frontend": {
+        "name": "frontend",
+        "type": "IDENTIFIER",
+        "line": 13,
+        "column": 27
+    },
+    "communication": {
+        "name": "communication",
+        "type": "IDENTIFIER",
+        "line": 13,
+        "column": 36
+    },
+    "add_middleware": {
+        "name": "add_middleware",
+        "type": "IDENTIFIER",
+        "line": 14,
+        "column": 5
+    },
+    "allow_origins": {
+        "name": "allow_origins",
+        "type": "IDENTIFIER",
+        "line": 16,
+        "column": 5
+    },
+    "http": {
+        "name": "http",
+        "type": "IDENTIFIER",
+        "line": 16,
+        "column": 21
+    },
+    "allow_credentials": {
+        "name": "allow_credentials",
+        "type": "IDENTIFIER",
+        "line": 17,
+        "column": 5
+    },
+    "True": {
+        "name": "True",
+        "type": "IDENTIFIER",
+        "line": 17,
+        "column": 23
+    },
+    "allow_methods": {
+        "name": "allow_methods",
+        "type": "IDENTIFIER",
+        "line": 18,
+        "column": 5
+    },
+    "allow_headers": {
+        "name": "allow_headers",
+        "type": "IDENTIFIER",
+        "line": 19,
+        "column": 5
+    },
+    "include_router": {
+        "name": "include_router",
+        "type": "IDENTIFIER",
+        "line": 22,
+        "column": 5
+    },
+    "APIRouter": {
+        "name": "APIRouter",
+        "type": "IDENTIFIER",
+        "line": 25,
+        "column": 21
+    },
+    "HTTPException": {
+        "name": "HTTPException",
+        "type": "IDENTIFIER",
+        "line": 25,
+        "column": 32
+    },
+    "schemas": {
+        "name": "schemas",
+        "type": "IDENTIFIER",
+        "line": 26,
+        "column": 7
+    },
+    "CompileRequest": {
+        "name": "CompileRequest",
+        "type": "IDENTIFIER",
+        "line": 26,
+        "column": 22
+    },
+    "CompileError": {
+        "name": "CompileError",
+        "type": "IDENTIFIER",
+        "line": 26,
+        "column": 38
+    },
+    "CompileResponse": {
+        "name": "CompileResponse",
+        "type": "IDENTIFIER",
+        "line": 26,
+        "column": 52
+    },
+    "subprocess": {
+        "name": "subprocess",
+        "type": "IDENTIFIER",
+        "line": 27,
+        "column": 8
+    },
+    "os": {
+        "name": "os",
+        "type": "IDENTIFIER",
+        "line": 28,
+        "column": 8
+    },
+    "uuid": {
+        "name": "uuid",
+        "type": "IDENTIFIER",
+        "line": 29,
+        "column": 8
+    },
+    "json": {
+        "name": "json",
+        "type": "IDENTIFIER",
+        "line": 30,
+        "column": 8
+    },
+    "base64": {
+        "name": "base64",
+        "type": "IDENTIFIER",
+        "line": 31,
+        "column": 8
+    },
+    "post": {
+        "name": "post",
+        "type": "IDENTIFIER",
+        "line": 35,
+        "column": 9
+    },
+    "compile": {
+        "name": "compile",
+        "type": "IDENTIFIER",
+        "line": 35,
+        "column": 16
+    },
+    "response_model": {
+        "name": "response_model",
+        "type": "IDENTIFIER",
+        "line": 35,
+        "column": 26
+    },
+    "def": {
+        "name": "def",
+        "type": "IDENTIFIER",
+        "line": 36,
+        "column": 1
+    },
+    "compile_code": {
+        "name": "compile_code",
+        "type": "IDENTIFIER",
+        "line": 36,
+        "column": 5
+    },
+    "request": {
+        "name": "request",
+        "type": "IDENTIFIER",
+        "line": 36,
+        "column": 18
+    },
+    "Compiles": {
+        "name": "Compiles",
+        "type": "IDENTIFIER",
+        "line": 38,
+        "column": 5
+    },
+    "the": {
+        "name": "the",
+        "type": "IDENTIFIER",
+        "line": 38,
+        "column": 14
+    },
+    "returns": {
+        "name": "returns",
+        "type": "IDENTIFIER",
+        "line": 38,
+        "column": 39
+    },
+    "compilation": {
+        "name": "compilation",
+        "type": "IDENTIFIER",
+        "line": 38,
+        "column": 51
+    },
+    "Generate": {
+        "name": "Generate",
+        "type": "IDENTIFIER",
+        "line": 40,
+        "column": 7
+    },
+    "a": {
+        "name": "a",
+        "type": "IDENTIFIER",
+        "line": 40,
+        "column": 16
+    },
+    "unique": {
+        "name": "unique",
+        "type": "IDENTIFIER",
+        "line": 40,
+        "column": 18
+    },
+    "filename": {
+        "name": "filename",
+        "type": "IDENTIFIER",
+        "line": 40,
+        "column": 25
+    },
+    "submission": {
+        "name": "submission",
+        "type": "IDENTIFIER",
+        "line": 40,
+        "column": 42
+    },
+    "unique_id": {
+        "name": "unique_id",
+        "type": "IDENTIFIER",
+        "line": 41,
+        "column": 5
+    },
+    "uuid4": {
+        "name": "uuid4",
+        "type": "IDENTIFIER",
+        "line": 41,
+        "column": 22
+    },
+    "hex": {
+        "name": "hex",
+        "type": "IDENTIFIER",
+        "line": 41,
+        "column": 30
+    },
+    "code_filename": {
+        "name": "code_filename",
+        "type": "IDENTIFIER",
+        "line": 42,
+        "column": 5
+    },
+    "f": {
+        "name": "f",
+        "type": "IDENTIFIER",
+        "line": 42,
+        "column": 21
+    },
+    "data": {
+        "name": "data",
+        "type": "IDENTIFIER",
+        "line": 42,
+        "column": 23
+    },
+    "sample_c_codes": {
+        "name": "sample_c_codes",
+        "type": "IDENTIFIER",
+        "line": 42,
+        "column": 28
+    },
+    "user_code_": {
+        "name": "user_code_",
+        "type": "IDENTIFIER",
+        "line": 42,
+        "column": 43
+    },
+    "c": {
+        "name": "c",
+        "type": "IDENTIFIER",
+        "line": 42,
+        "column": 65
+    },
+    "Save": {
+        "name": "Save",
+        "type": "IDENTIFIER",
+        "line": 44,
+        "column": 7
+    },
+    "file": {
+        "name": "file",
+        "type": "IDENTIFIER",
+        "line": 44,
+        "column": 45
+    },
+    "try": {
+        "name": "try",
+        "type": "IDENTIFIER",
+        "line": 45,
+        "column": 5
+    },
+    "with": {
+        "name": "with",
+        "type": "IDENTIFIER",
+        "line": 46,
+        "column": 9
+    },
+    "open": {
+        "name": "open",
+        "type": "IDENTIFIER",
+        "line": 46,
+        "column": 14
+    },
+    "w": {
+        "name": "w",
+        "type": "IDENTIFIER",
+        "line": 46,
+        "column": 35
+    },
+    "as": {
+        "name": "as",
+        "type": "IDENTIFIER",
+        "line": 46,
+        "column": 39
+    },
+    "write": {
+        "name": "write",
+        "type": "IDENTIFIER",
+        "line": 47,
+        "column": 15
+    },
+    "except": {
+        "name": "except",
+        "type": "IDENTIFIER",
+        "line": 48,
+        "column": 5
+    },
+    "Exception": {
+        "name": "Exception",
+        "type": "IDENTIFIER",
+        "line": 48,
+        "column": 12
+    },
+    "e": {
+        "name": "e",
+        "type": "IDENTIFIER",
+        "line": 48,
+        "column": 25
+    },
+    "raise": {
+        "name": "raise",
+        "type": "IDENTIFIER",
+        "line": 49,
+        "column": 9
+    },
+    "status_code": {
+        "name": "status_code",
+        "type": "IDENTIFIER",
+        "line": 49,
+        "column": 29
+    },
+    "detail": {
+        "name": "detail",
+        "type": "IDENTIFIER",
+        "line": 49,
+        "column": 46
+    },
+    "Failed": {
+        "name": "Failed",
+        "type": "IDENTIFIER",
+        "line": 49,
+        "column": 55
+    },
+    "save": {
+        "name": "save",
+        "type": "IDENTIFIER",
+        "line": 49,
+        "column": 65
+    },
+    "str": {
+        "name": "str",
+        "type": "IDENTIFIER",
+        "line": 49,
+        "column": 77
+    },
+    "Define": {
+        "name": "Define",
+        "type": "IDENTIFIER",
+        "line": 51,
+        "column": 7
+    },
+    "output": {
+        "name": "output",
+        "type": "IDENTIFIER",
+        "line": 51,
+        "column": 18
+    },
+    "output_file": {
+        "name": "output_file",
+        "type": "IDENTIFIER",
+        "line": 52,
+        "column": 5
+    },
+    "full_code": {
+        "name": "full_code",
+        "type": "IDENTIFIER",
+        "line": 52,
+        "column": 20
+    },
+    "txt": {
+        "name": "txt",
+        "type": "IDENTIFIER",
+        "line": 52,
+        "column": 30
+    },
+    "Run": {
+        "name": "Run",
+        "type": "IDENTIFIER",
+        "line": 54,
+        "column": 7
+    },
+    "script": {
+        "name": "script",
+        "type": "IDENTIFIER",
+        "line": 54,
+        "column": 27
+    },
+    "Ensure": {
+        "name": "Ensure",
+        "type": "IDENTIFIER",
+        "line": 56,
+        "column": 11
+    },
+    "has": {
+        "name": "has",
+        "type": "IDENTIFIER",
+        "line": 56,
+        "column": 29
+    },
+    "execution": {
+        "name": "execution",
+        "type": "IDENTIFIER",
+        "line": 56,
+        "column": 33
+    },
+    "permissions": {
+        "name": "permissions",
+        "type": "IDENTIFIER",
+        "line": 56,
+        "column": 43
+    },
+    "chmod": {
+        "name": "chmod",
+        "type": "IDENTIFIER",
+        "line": 57,
+        "column": 12
+    },
+    "scripts": {
+        "name": "scripts",
+        "type": "IDENTIFIER",
+        "line": 57,
+        "column": 19
+    },
+    "sh": {
+        "name": "sh",
+        "type": "IDENTIFIER",
+        "line": 57,
+        "column": 32
+    },
+    "o755": {
+        "name": "o755",
+        "type": "IDENTIFIER",
+        "line": 57,
+        "column": 38
+    },
+    "Execute": {
+        "name": "Execute",
+        "type": "IDENTIFIER",
+        "line": 59,
+        "column": 11
+    },
+    "run": {
+        "name": "run",
+        "type": "IDENTIFIER",
+        "line": 60,
+        "column": 20
+    },
+    "check": {
+        "name": "check",
+        "type": "IDENTIFIER",
+        "line": 60,
+        "column": 47
+    },
+    "CalledProcessError": {
+        "name": "CalledProcessError",
+        "type": "IDENTIFIER",
+        "line": 61,
+        "column": 23
+    },
+    "Compilation": {
+        "name": "Compilation",
+        "type": "IDENTIFIER",
+        "line": 62,
+        "column": 54
+    },
+    "process": {
+        "name": "process",
+        "type": "IDENTIFIER",
+        "line": 62,
+        "column": 66
+    },
+    "failed": {
+        "name": "failed",
+        "type": "IDENTIFIER",
+        "line": 62,
+        "column": 74
+    },
+    "Error": {
+        "name": "Error",
+        "type": "IDENTIFIER",
+        "line": 64,
+        "column": 55
+    },
+    "running": {
+        "name": "running",
+        "type": "IDENTIFIER",
+        "line": 64,
+        "column": 61
+    },
+    "Read": {
+        "name": "Read",
+        "type": "IDENTIFIER",
+        "line": 66,
+        "column": 7
+    },
+    "errors": {
+        "name": "errors",
+        "type": "IDENTIFIER",
+        "line": 66,
+        "column": 24
+    },
+    "errors_path": {
+        "name": "errors_path",
+        "type": "IDENTIFIER",
+        "line": 67,
+        "column": 5
+    },
+    "if": {
+        "name": "if",
+        "type": "IF",
+        "line": 68,
+        "column": 5
+    },
+    "path": {
+        "name": "path",
+        "type": "IDENTIFIER",
+        "line": 68,
+        "column": 11
+    },
+    "exists": {
+        "name": "exists",
+        "type": "IDENTIFIER",
+        "line": 68,
+        "column": 16
+    },
+    "r": {
+        "name": "r",
+        "type": "IDENTIFIER",
+        "line": 70,
+        "column": 37
+    },
+    "load": {
+        "name": "load",
+        "type": "IDENTIFIER",
+        "line": 71,
+        "column": 31
+    },
+    "type": {
+        "name": "type",
+        "type": "IDENTIFIER",
+        "line": 73,
+        "column": 25
+    },
+    "System": {
+        "name": "System",
+        "type": "IDENTIFIER",
+        "line": 73,
+        "column": 33
+    },
+    "message": {
+        "name": "message",
+        "type": "IDENTIFIER",
+        "line": 73,
+        "column": 43
+    },
+    "read": {
+        "name": "read",
+        "type": "IDENTIFIER",
+        "line": 73,
+        "column": 65
+    },
+    "line": {
+        "name": "line",
+        "type": "IDENTIFIER",
+        "line": 73,
+        "column": 95
+    },
+    "column": {
+        "name": "column",
+        "type": "IDENTIFIER",
+        "line": 73,
+        "column": 106
+    },
+    "else": {
+        "name": "else",
+        "type": "ELSE",
+        "line": 74,
+        "column": 5
+    },
+    "symbol": {
+        "name": "symbol",
+        "type": "IDENTIFIER",
+        "line": 77,
+        "column": 12
+    },
+    "table": {
+        "name": "table",
+        "type": "IDENTIFIER",
+        "line": 77,
+        "column": 19
+    },
+    "symbol_table_path": {
+        "name": "symbol_table_path",
+        "type": "IDENTIFIER",
+        "line": 78,
+        "column": 5
+    },
+    "symbol_table": {
+        "name": "symbol_table",
+        "type": "IDENTIFIER",
+        "line": 78,
+        "column": 33
+    },
+    "AST": {
+        "name": "AST",
+        "type": "IDENTIFIER",
+        "line": 88,
+        "column": 12
+    },
+    "image": {
+        "name": "image",
+        "type": "IDENTIFIER",
+        "line": 88,
+        "column": 16
+    },
+    "encode": {
+        "name": "encode",
+        "type": "IDENTIFIER",
+        "line": 88,
+        "column": 26
+    },
+    "it": {
+        "name": "it",
+        "type": "IDENTIFIER",
+        "line": 88,
+        "column": 33
+    },
+    "in": {
+        "name": "in",
+        "type": "IDENTIFIER",
+        "line": 88,
+        "column": 36
+    },
+    "Base64": {
+        "name": "Base64",
+        "type": "IDENTIFIER",
+        "line": 88,
+        "column": 39
+    },
+    "ast_image_path": {
+        "name": "ast_image_path",
+        "type": "IDENTIFIER",
+        "line": 89,
+        "column": 5
+    },
+    "ast_output": {
+        "name": "ast_output",
+        "type": "IDENTIFIER",
+        "line": 89,
+        "column": 23
+    },
+    "png": {
+        "name": "png",
+        "type": "IDENTIFIER",
+        "line": 89,
+        "column": 34
+    },
+    "rb": {
+        "name": "rb",
+        "type": "IDENTIFIER",
+        "line": 92,
+        "column": 40
+    },
+    "image_file": {
+        "name": "image_file",
+        "type": "IDENTIFIER",
+        "line": 92,
+        "column": 48
+    },
+    "encoded_string": {
+        "name": "encoded_string",
+        "type": "IDENTIFIER",
+        "line": 93,
+        "column": 17
+    },
+    "b64encode": {
+        "name": "b64encode",
+        "type": "IDENTIFIER",
+        "line": 93,
+        "column": 41
+    },
+    "decode": {
+        "name": "decode",
+        "type": "IDENTIFIER",
+        "line": 93,
+        "column": 70
+    },
+    "utf": {
+        "name": "utf",
+        "type": "IDENTIFIER",
+        "line": 93,
+        "column": 78
+    },
+    "ast_image": {
+        "name": "ast_image",
+        "type": "IDENTIFIER",
+        "line": 94,
+        "column": 13
+    },
+    "None": {
+        "name": "None",
+        "type": "IDENTIFIER",
+        "line": 96,
+        "column": 25
+    },
+    "Determine": {
+        "name": "Determine",
+        "type": "IDENTIFIER",
+        "line": 100,
+        "column": 7
+    },
+    "success": {
+        "name": "success",
+        "type": "IDENTIFIER",
+        "line": 100,
+        "column": 17
+    },
+    "based": {
+        "name": "based",
+        "type": "IDENTIFIER",
+        "line": 100,
+        "column": 25
+    },
+    "on": {
+        "name": "on",
+        "type": "IDENTIFIER",
+        "line": 100,
+        "column": 31
+    },
+    "presence": {
+        "name": "presence",
+        "type": "IDENTIFIER",
+        "line": 100,
+        "column": 34
+    },
+    "of": {
+        "name": "of",
+        "type": "IDENTIFIER",
+        "line": 100,
+        "column": 43
+    },
+    "len": {
+        "name": "len",
+        "type": "IDENTIFIER",
+        "line": 101,
+        "column": 15
+    },
+    "Cleanup": {
+        "name": "Cleanup",
+        "type": "IDENTIFIER",
+        "line": 103,
+        "column": 7
+    },
+    "Remove": {
+        "name": "Remove",
+        "type": "IDENTIFIER",
+        "line": 103,
+        "column": 16
+    },
+    "remove": {
+        "name": "remove",
+        "type": "IDENTIFIER",
+        "line": 105,
+        "column": 12
+    },
+    "pass": {
+        "name": "pass",
+        "type": "IDENTIFIER",
+        "line": 107,
+        "column": 9
+    },
+    "Optionally": {
+        "name": "Optionally",
+        "type": "IDENTIFIER",
+        "line": 107,
+        "column": 17
+    },
+    "log": {
+        "name": "log",
+        "type": "IDENTIFIER",
+        "line": 107,
+        "column": 29
+    },
+    "this": {
+        "name": "this",
+        "type": "IDENTIFIER",
+        "line": 107,
+        "column": 33
+    },
+    "exception": {
+        "name": "exception",
+        "type": "IDENTIFIER",
+        "line": 107,
+        "column": 38
+    },
+    "return": {
+        "name": "return",
+        "type": "RETURN",
+        "line": 109,
+        "column": 5
+    },
+    "pydantic": {
+        "name": "pydantic",
+        "type": "IDENTIFIER",
+        "line": 117,
+        "column": 6
+    },
+    "BaseModel": {
+        "name": "BaseModel",
+        "type": "IDENTIFIER",
+        "line": 117,
+        "column": 22
+    },
+    "typing": {
+        "name": "typing",
+        "type": "IDENTIFIER",
+        "line": 118,
+        "column": 6
+    },
+    "List": {
+        "name": "List",
+        "type": "IDENTIFIER",
+        "line": 118,
+        "column": 20
+    },
+    "Optional": {
+        "name": "Optional",
+        "type": "IDENTIFIER",
+        "line": 118,
+        "column": 26
+    },
+    "class": {
+        "name": "class",
+        "type": "IDENTIFIER",
+        "line": 120,
+        "column": 1
+    },
+    "int": {
+        "name": "int",
+        "type": "INT",
+        "line": 126,
+        "column": 11
+    },
+    "bool": {
+        "name": "bool",
+        "type": "IDENTIFIER",
+        "line": 130,
+        "column": 14
+    },
+    "dict": {
+        "name": "dict",
+        "type": "IDENTIFIER",
+        "line": 132,
+        "column": 19
+    },
+    "encoded": {
+        "name": "encoded",
+        "type": "IDENTIFIER",
+        "line": 133,
+        "column": 40
+    },
+    "string": {
+        "name": "string",
+        "type": "IDENTIFIER",
+        "line": 133,
+        "column": 54
+    },
+    "bin": {
+        "name": "bin",
+        "type": "IDENTIFIER",
+        "line": 134,
+        "column": 4
+    },
+    "bash": {
+        "name": "bash",
+        "type": "IDENTIFIER",
+        "line": 134,
+        "column": 8
+    },
+    "directory": {
+        "name": "directory",
+        "type": "IDENTIFIER",
+        "line": 136,
+        "column": 14
+    },
+    "where": {
+        "name": "where",
+        "type": "IDENTIFIER",
+        "line": 136,
+        "column": 24
+    },
+    "your": {
+        "name": "your",
+        "type": "IDENTIFIER",
+        "line": 136,
+        "column": 30
+    },
+    "project": {
+        "name": "project",
+        "type": "IDENTIFIER",
+        "line": 136,
+        "column": 35
+    },
+    "is": {
+        "name": "is",
+        "type": "IDENTIFIER",
+        "line": 136,
+        "column": 43
+    },
+    "located": {
+        "name": "located",
+        "type": "IDENTIFIER",
+        "line": 136,
+        "column": 46
+    },
+    "PROJECT_DIR": {
+        "name": "PROJECT_DIR",
+        "type": "IDENTIFIER",
+        "line": 137,
+        "column": 1
+    },
+    "mnt": {
+        "name": "mnt",
+        "type": "IDENTIFIER",
+        "line": 137,
+        "column": 15
+    },
+    "Users": {
+        "name": "Users",
+        "type": "IDENTIFIER",
+        "line": 137,
+        "column": 21
+    },
+    "chait": {
+        "name": "chait",
+        "type": "IDENTIFIER",
+        "line": 137,
+        "column": 27
+    },
+    "OneDrive": {
+        "name": "OneDrive",
+        "type": "IDENTIFIER",
+        "line": 137,
+        "column": 33
+    },
+    "Documents": {
+        "name": "Documents",
+        "type": "IDENTIFIER",
+        "line": 137,
+        "column": 42
+    },
+    "Projects": {
+        "name": "Projects",
+        "type": "IDENTIFIER",
+        "line": 137,
+        "column": 52
+    },
+    "trial3": {
+        "name": "trial3",
+        "type": "IDENTIFIER",
+        "line": 137,
+        "column": 70
+    },
+    "back": {
+        "name": "back",
+        "type": "IDENTIFIER",
+        "line": 137,
+        "column": 77
+    },
+    "OUTPUT_FILE": {
+        "name": "OUTPUT_FILE",
+        "type": "IDENTIFIER",
+        "line": 140,
+        "column": 1
+    },
+    "Navigate": {
+        "name": "Navigate",
+        "type": "IDENTIFIER",
+        "line": 142,
+        "column": 3
+    },
+    "cd": {
+        "name": "cd",
+        "type": "IDENTIFIER",
+        "line": 143,
+        "column": 1
+    },
+    "exit": {
+        "name": "exit",
+        "type": "IDENTIFIER",
+        "line": 143,
+        "column": 22
+    },
+    "Find": {
+        "name": "Find",
+        "type": "IDENTIFIER",
+        "line": 145,
+        "column": 3
+    },
+    "concatenate": {
+        "name": "concatenate",
+        "type": "IDENTIFIER",
+        "line": 145,
+        "column": 12
+    },
+    "all": {
+        "name": "all",
+        "type": "IDENTIFIER",
+        "line": 145,
+        "column": 24
+    },
+    "files": {
+        "name": "files",
+        "type": "IDENTIFIER",
+        "line": 145,
+        "column": 33
+    },
+    "into": {
+        "name": "into",
+        "type": "IDENTIFIER",
+        "line": 145,
+        "column": 39
+    },
+    "find": {
+        "name": "find",
+        "type": "IDENTIFIER",
+        "line": 146,
+        "column": 1
+    },
+    "name": {
+        "name": "name",
+        "type": "IDENTIFIER",
+        "line": 146,
+        "column": 12
+    },
+    "o": {
+        "name": "o",
+        "type": "IDENTIFIER",
+        "line": 146,
+        "column": 25
+    },
+    "exec": {
+        "name": "exec",
+        "type": "IDENTIFIER",
+        "line": 146,
+        "column": 59
+    },
+    "cat": {
+        "name": "cat",
+        "type": "IDENTIFIER",
+        "line": 146,
+        "column": 64
+    },
+    "Perform": {
+        "name": "Perform",
+        "type": "IDENTIFIER",
+        "line": 148,
+        "column": 3
+    },
+    "lexical": {
+        "name": "lexical",
+        "type": "IDENTIFIER",
+        "line": 148,
+        "column": 11
+    },
+    "analysis": {
+        "name": "analysis",
+        "type": "IDENTIFIER",
+        "line": 148,
+        "column": 19
+    },
+    "syntax": {
+        "name": "syntax",
+        "type": "IDENTIFIER",
+        "line": 148,
+        "column": 32
+    },
+    "python3": {
+        "name": "python3",
+        "type": "IDENTIFIER",
+        "line": 149,
+        "column": 1
+    },
+    "src": {
+        "name": "src",
+        "type": "IDENTIFIER",
+        "line": 149,
+        "column": 9
+    },
+    "are": {
+        "name": "are",
+        "type": "IDENTIFIER",
+        "line": 151,
+        "column": 41
+    },
+    "handled": {
+        "name": "handled",
+        "type": "IDENTIFIER",
+        "line": 151,
+        "column": 45
+    },
+    "within": {
+        "name": "within",
+        "type": "IDENTIFIER",
+        "line": 151,
+        "column": 53
+    },
+    "visualization": {
+        "name": "visualization",
+        "type": "IDENTIFIER",
+        "line": 153,
+        "column": 16
+    },
+    "Confirm": {
+        "name": "Confirm",
+        "type": "IDENTIFIER",
+        "line": 156,
+        "column": 3
+    },
+    "completion": {
+        "name": "completion",
+        "type": "IDENTIFIER",
+        "line": 156,
+        "column": 11
+    },
+    "echo": {
+        "name": "echo",
+        "type": "IDENTIFIER",
+        "line": 157,
+        "column": 1
+    },
+    "All": {
+        "name": "All",
+        "type": "IDENTIFIER",
+        "line": 157,
+        "column": 7
+    },
+    "been": {
+        "name": "been",
+        "type": "IDENTIFIER",
+        "line": 157,
+        "column": 20
+    },
+    "concatenated": {
+        "name": "concatenated",
+        "type": "IDENTIFIER",
+        "line": 157,
+        "column": 25
+    },
+    "analyzed": {
+        "name": "analyzed",
+        "type": "IDENTIFIER",
+        "line": 157,
+        "column": 42
+    },
+    "float": {
+        "name": "float",
+        "type": "FLOAT",
+        "line": 162,
+        "column": 5
+    },
+    "b": {
+        "name": "b",
+        "type": "IDENTIFIER",
+        "line": 162,
+        "column": 11
+    },
+    "add": {
+        "name": "add",
+        "type": "IDENTIFIER",
+        "line": 171,
         "column": 5
     },
     "x": {
         "name": "x",
         "type": "IDENTIFIER",
-        "line": 8,
+        "line": 176,
         "column": 9
     },
     "y": {
         "name": "y",
         "type": "IDENTIFIER",
-        "line": 9,
+        "line": 177,
         "column": 9
-    },
-    "float": {
-        "name": "float",
-        "type": "FLOAT",
-        "line": 10,
-        "column": 5
     },
     "z": {
         "name": "z",
         "type": "IDENTIFIER",
-        "line": 10,
+        "line": 178,
         "column": 11
     },
-    "if": {
-        "name": "if",
-        "type": "IF",
-        "line": 11,
+    "Create": {
+        "name": "Create",
+        "type": "IDENTIFIER",
+        "line": 187,
+        "column": 3
+    },
+    "top": {
+        "name": "top",
+        "type": "IDENTIFIER",
+        "line": 187,
+        "column": 10
+    },
+    "level": {
+        "name": "level",
+        "type": "IDENTIFIER",
+        "line": 187,
+        "column": 14
+    },
+    "touch": {
+        "name": "touch",
+        "type": "IDENTIFIER",
+        "line": 188,
+        "column": 1
+    },
+    "README": {
+        "name": "README",
+        "type": "IDENTIFIER",
+        "line": 188,
+        "column": 7
+    },
+    "md": {
+        "name": "md",
+        "type": "IDENTIFIER",
+        "line": 188,
+        "column": 14
+    },
+    "LICENSE": {
+        "name": "LICENSE",
+        "type": "IDENTIFIER",
+        "line": 188,
+        "column": 17
+    },
+    "requirements": {
+        "name": "requirements",
+        "type": "IDENTIFIER",
+        "line": 188,
+        "column": 25
+    },
+    "setup": {
+        "name": "setup",
+        "type": "IDENTIFIER",
+        "line": 188,
+        "column": 42
+    },
+    "gitignore": {
+        "name": "gitignore",
+        "type": "IDENTIFIER",
+        "line": 188,
+        "column": 52
+    },
+    "directories": {
+        "name": "directories",
+        "type": "IDENTIFIER",
+        "line": 190,
+        "column": 10
+    },
+    "subdirectories": {
+        "name": "subdirectories",
+        "type": "IDENTIFIER",
+        "line": 190,
+        "column": 26
+    },
+    "mkdir": {
+        "name": "mkdir",
+        "type": "IDENTIFIER",
+        "line": 191,
+        "column": 1
+    },
+    "p": {
+        "name": "p",
+        "type": "IDENTIFIER",
+        "line": 191,
+        "column": 8
+    },
+    "docs": {
+        "name": "docs",
+        "type": "IDENTIFIER",
+        "line": 191,
+        "column": 10
+    },
+    "config": {
+        "name": "config",
+        "type": "IDENTIFIER",
+        "line": 191,
+        "column": 19
+    },
+    "lexer": {
+        "name": "lexer",
+        "type": "IDENTIFIER",
+        "line": 191,
+        "column": 30
+    },
+    "parser": {
+        "name": "parser",
+        "type": "IDENTIFIER",
+        "line": 191,
+        "column": 40
+    },
+    "analyzer": {
+        "name": "analyzer",
+        "type": "IDENTIFIER",
+        "line": 191,
+        "column": 51
+    },
+    "utils": {
+        "name": "utils",
+        "type": "IDENTIFIER",
+        "line": 191,
+        "column": 64
+    },
+    "api": {
+        "name": "api",
+        "type": "IDENTIFIER",
+        "line": 191,
+        "column": 74
+    },
+    "tests": {
+        "name": "tests",
+        "type": "IDENTIFIER",
+        "line": 191,
+        "column": 78
+    },
+    "test_lexer": {
+        "name": "test_lexer",
+        "type": "IDENTIFIER",
+        "line": 191,
+        "column": 84
+    },
+    "test_parser": {
+        "name": "test_parser",
+        "type": "IDENTIFIER",
+        "line": 191,
+        "column": 101
+    },
+    "test_analyzer": {
+        "name": "test_analyzer",
+        "type": "IDENTIFIER",
+        "line": 191,
+        "column": 119
+    },
+    "test_utils": {
+        "name": "test_utils",
+        "type": "IDENTIFIER",
+        "line": 191,
+        "column": 139
+    },
+    "architecture": {
+        "name": "architecture",
+        "type": "IDENTIFIER",
+        "line": 194,
+        "column": 12
+    },
+    "user_guide": {
+        "name": "user_guide",
+        "type": "IDENTIFIER",
+        "line": 194,
+        "column": 33
+    },
+    "api_reference": {
+        "name": "api_reference",
+        "type": "IDENTIFIER",
+        "line": 194,
+        "column": 52
+    },
+    "__init__": {
+        "name": "__init__",
+        "type": "IDENTIFIER",
+        "line": 197,
+        "column": 11
+    },
+    "settings": {
+        "name": "settings",
+        "type": "IDENTIFIER",
+        "line": 198,
+        "column": 41
+    },
+    "tokenizer": {
+        "name": "tokenizer",
+        "type": "IDENTIFIER",
+        "line": 199,
+        "column": 39
+    },
+    "tokens": {
+        "name": "tokens",
+        "type": "IDENTIFIER",
+        "line": 199,
+        "column": 62
+    },
+    "ast_nodes": {
+        "name": "ast_nodes",
+        "type": "IDENTIFIER",
+        "line": 200,
+        "column": 41
+    },
+    "grammar": {
+        "name": "grammar",
+        "type": "IDENTIFIER",
+        "line": 200,
+        "column": 86
+    },
+    "semantic_analyzer": {
+        "name": "semantic_analyzer",
+        "type": "IDENTIFIER",
+        "line": 201,
+        "column": 45
+    },
+    "logger": {
+        "name": "logger",
+        "type": "IDENTIFIER",
+        "line": 202,
+        "column": 39
+    },
+    "helpers": {
+        "name": "helpers",
+        "type": "IDENTIFIER",
+        "line": 202,
+        "column": 59
+    },
+    "endpoints": {
+        "name": "endpoints",
+        "type": "IDENTIFIER",
+        "line": 203,
+        "column": 35
+    },
+    "test_tokenizer": {
+        "name": "test_tokenizer",
+        "type": "IDENTIFIER",
+        "line": 207,
+        "column": 53
+    },
+    "test_semantic_analyzer": {
+        "name": "test_semantic_analyzer",
+        "type": "IDENTIFIER",
+        "line": 209,
+        "column": 59
+    },
+    "test_helpers": {
+        "name": "test_helpers",
+        "type": "IDENTIFIER",
+        "line": 210,
+        "column": 53
+    },
+    "build": {
+        "name": "build",
+        "type": "IDENTIFIER",
+        "line": 213,
+        "column": 15
+    },
+    "run_tests": {
+        "name": "run_tests",
+        "type": "IDENTIFIER",
+        "line": 213,
+        "column": 32
+    },
+    "sample": {
+        "name": "sample",
+        "type": "IDENTIFIER",
+        "line": 215,
+        "column": 10
+    },
+    "example1": {
+        "name": "example1",
+        "type": "IDENTIFIER",
+        "line": 216,
+        "column": 27
+    },
+    "example2": {
+        "name": "example2",
+        "type": "IDENTIFIER",
+        "line": 216,
+        "column": 58
+    },
+    "File": {
+        "name": "File",
+        "type": "IDENTIFIER",
+        "line": 218,
+        "column": 7
+    },
+    "structure": {
+        "name": "structure",
+        "type": "IDENTIFIER",
+        "line": 218,
+        "column": 12
+    },
+    "created": {
+        "name": "created",
+        "type": "IDENTIFIER",
+        "line": 218,
+        "column": 22
+    },
+    "successfully": {
+        "name": "successfully",
+        "type": "IDENTIFIER",
+        "line": 218,
+        "column": 30
+    },
+    "error_handler": {
+        "name": "error_handler",
+        "type": "IDENTIFIER",
+        "line": 219,
+        "column": 13
+    },
+    "CompilerError": {
+        "name": "CompilerError",
+        "type": "IDENTIFIER",
+        "line": 224,
+        "column": 7
+    },
+    "Represents": {
+        "name": "Represents",
+        "type": "IDENTIFIER",
+        "line": 225,
+        "column": 8
+    },
+    "single": {
+        "name": "single",
+        "type": "IDENTIFIER",
+        "line": 225,
+        "column": 21
+    },
+    "error": {
+        "name": "error",
+        "type": "IDENTIFIER",
+        "line": 225,
+        "column": 28
+    },
+    "compiler": {
+        "name": "compiler",
+        "type": "IDENTIFIER",
+        "line": 225,
+        "column": 41
+    },
+    "self": {
+        "name": "self",
+        "type": "IDENTIFIER",
+        "line": 226,
+        "column": 18
+    },
+    "error_type": {
+        "name": "error_type",
+        "type": "IDENTIFIER",
+        "line": 226,
+        "column": 24
+    },
+    "lineno": {
+        "name": "lineno",
+        "type": "IDENTIFIER",
+        "line": 226,
+        "column": 45
+    },
+    "Lexical": {
+        "name": "Lexical",
+        "type": "IDENTIFIER",
+        "line": 227,
+        "column": 42
+    },
+    "Semantic": {
+        "name": "Semantic",
+        "type": "IDENTIFIER",
+        "line": 227,
+        "column": 63
+    },
+    "etc": {
+        "name": "etc",
+        "type": "IDENTIFIER",
+        "line": 227,
+        "column": 74
+    },
+    "to_dict": {
+        "name": "to_dict",
+        "type": "IDENTIFIER",
+        "line": 232,
+        "column": 9
+    },
+    "ErrorHandler": {
+        "name": "ErrorHandler",
+        "type": "IDENTIFIER",
+        "line": 240,
+        "column": 7
+    },
+    "Centralized": {
+        "name": "Centralized",
+        "type": "IDENTIFIER",
+        "line": 241,
+        "column": 8
+    },
+    "handling": {
+        "name": "handling",
+        "type": "IDENTIFIER",
+        "line": 241,
+        "column": 26
+    },
+    "add_error": {
+        "name": "add_error",
+        "type": "IDENTIFIER",
+        "line": 245,
+        "column": 9
+    },
+    "Record": {
+        "name": "Record",
+        "type": "IDENTIFIER",
+        "line": 246,
+        "column": 12
+    },
+    "new": {
+        "name": "new",
+        "type": "IDENTIFIER",
+        "line": 246,
+        "column": 21
+    },
+    "err": {
+        "name": "err",
+        "type": "IDENTIFIER",
+        "line": 247,
+        "column": 9
+    },
+    "append": {
+        "name": "append",
+        "type": "IDENTIFIER",
+        "line": 248,
+        "column": 21
+    },
+    "Print": {
+        "name": "Print",
+        "type": "IDENTIFIER",
+        "line": 249,
+        "column": 11
+    },
+    "concise": {
+        "name": "concise",
+        "type": "IDENTIFIER",
+        "line": 249,
+        "column": 19
+    },
+    "immediate": {
+        "name": "immediate",
+        "type": "IDENTIFIER",
+        "line": 249,
+        "column": 39
+    },
+    "feedback": {
+        "name": "feedback",
+        "type": "IDENTIFIER",
+        "line": 249,
+        "column": 49
+    },
+    "print": {
+        "name": "print",
+        "type": "IDENTIFIER",
+        "line": 250,
+        "column": 9
+    },
+    "at": {
+        "name": "at",
+        "type": "IDENTIFIER",
+        "line": 250,
+        "column": 36
+    },
+    "has_errors": {
+        "name": "has_errors",
+        "type": "IDENTIFIER",
+        "line": 252,
+        "column": 9
+    },
+    "display_errors": {
+        "name": "display_errors",
+        "type": "IDENTIFIER",
+        "line": 255,
+        "column": 9
+    },
+    "Display": {
+        "name": "Display",
+        "type": "IDENTIFIER",
+        "line": 256,
+        "column": 12
+    },
+    "console": {
+        "name": "console",
+        "type": "IDENTIFIER",
+        "line": 256,
+        "column": 38
+    },
+    "not": {
+        "name": "not",
+        "type": "IDENTIFIER",
+        "line": 257,
+        "column": 12
+    },
+    "No": {
+        "name": "No",
+        "type": "IDENTIFIER",
+        "line": 258,
+        "column": 20
+    },
+    "found": {
+        "name": "found",
+        "type": "IDENTIFIER",
+        "line": 258,
+        "column": 30
+    },
+    "n": {
+        "name": "n",
+        "type": "IDENTIFIER",
+        "line": 261,
+        "column": 17
+    },
+    "Errors": {
+        "name": "Errors",
+        "type": "IDENTIFIER",
+        "line": 261,
+        "column": 34
+    },
+    "export_to_json": {
+        "name": "export_to_json",
+        "type": "IDENTIFIER",
+        "line": 266,
+        "column": 9
+    },
+    "file_path": {
+        "name": "file_path",
+        "type": "IDENTIFIER",
+        "line": 266,
+        "column": 30
+    },
+    "Export": {
+        "name": "Export",
+        "type": "IDENTIFIER",
+        "line": 267,
+        "column": 12
+    },
+    "JSON": {
+        "name": "JSON",
+        "type": "IDENTIFIER",
+        "line": 267,
+        "column": 31
+    },
+    "easier": {
+        "name": "easier",
+        "type": "IDENTIFIER",
+        "line": 267,
+        "column": 45
+    },
+    "reference": {
+        "name": "reference",
+        "type": "IDENTIFIER",
+        "line": 267,
+        "column": 52
+    },
+    "dirname": {
+        "name": "dirname",
+        "type": "IDENTIFIER",
+        "line": 268,
+        "column": 29
+    },
+    "makedirs": {
+        "name": "makedirs",
+        "type": "IDENTIFIER",
+        "line": 270,
+        "column": 16
+    },
+    "jf": {
+        "name": "jf",
+        "type": "IDENTIFIER",
+        "line": 272,
+        "column": 38
+    },
+    "dump": {
+        "name": "dump",
+        "type": "IDENTIFIER",
+        "line": 273,
+        "column": 18
+    },
+    "indent": {
+        "name": "indent",
+        "type": "IDENTIFIER",
+        "line": 273,
+        "column": 67
+    },
+    "exported": {
+        "name": "exported",
+        "type": "IDENTIFIER",
+        "line": 274,
+        "column": 24
+    },
+    "Initialize": {
+        "name": "Initialize",
+        "type": "IDENTIFIER",
+        "line": 276,
+        "column": 3
+    },
+    "handler": {
+        "name": "handler",
+        "type": "IDENTIFIER",
+        "line": 276,
+        "column": 24
+    },
+    "Symbol": {
+        "name": "Symbol",
+        "type": "IDENTIFIER",
+        "line": 281,
+        "column": 11
+    },
+    "an": {
+        "name": "an",
+        "type": "IDENTIFIER",
+        "line": 282,
+        "column": 23
+    },
+    "identifier": {
+        "name": "identifier",
+        "type": "IDENTIFIER",
+        "line": 282,
+        "column": 26
+    },
+    "token_type": {
+        "name": "token_type",
+        "type": "IDENTIFIER",
+        "line": 283,
+        "column": 34
+    },
+    "__repr__": {
+        "name": "__repr__",
+        "type": "IDENTIFIER",
+        "line": 288,
+        "column": 13
+    },
+    "Converts": {
+        "name": "Converts",
+        "type": "IDENTIFIER",
+        "line": 292,
+        "column": 16
+    },
+    "instance": {
+        "name": "instance",
+        "type": "IDENTIFIER",
+        "line": 292,
+        "column": 36
+    },
+    "dictionary": {
+        "name": "dictionary",
+        "type": "IDENTIFIER",
+        "line": 292,
+        "column": 50
+    },
+    "serialization": {
+        "name": "serialization",
+        "type": "IDENTIFIER",
+        "line": 292,
+        "column": 70
+    },
+    "SymbolTable": {
+        "name": "SymbolTable",
+        "type": "IDENTIFIER",
+        "line": 299,
+        "column": 11
+    },
+    "Stores": {
+        "name": "Stores",
+        "type": "IDENTIFIER",
+        "line": 300,
+        "column": 12
+    },
+    "symbols": {
+        "name": "symbols",
+        "type": "IDENTIFIER",
+        "line": 300,
+        "column": 19
+    },
+    "collected": {
+        "name": "collected",
+        "type": "IDENTIFIER",
+        "line": 300,
+        "column": 27
+    },
+    "during": {
+        "name": "during",
+        "type": "IDENTIFIER",
+        "line": 300,
+        "column": 37
+    },
+    "add_symbol": {
+        "name": "add_symbol",
+        "type": "IDENTIFIER",
+        "line": 304,
+        "column": 13
+    },
+    "Added": {
+        "name": "Added",
+        "type": "IDENTIFIER",
+        "line": 307,
+        "column": 25
+    },
+    "Table": {
+        "name": "Table",
+        "type": "IDENTIFIER",
+        "line": 307,
+        "column": 41
+    },
+    "already": {
+        "name": "already",
+        "type": "IDENTIFIER",
+        "line": 309,
+        "column": 41
+    },
+    "display": {
+        "name": "display",
+        "type": "IDENTIFIER",
+        "line": 311,
+        "column": 13
+    },
+    "values": {
+        "name": "values",
+        "type": "IDENTIFIER",
+        "line": 316,
+        "column": 44
+    },
+    "Exports": {
+        "name": "Exports",
+        "type": "IDENTIFIER",
+        "line": 321,
+        "column": 16
+    },
+    "does": {
+        "name": "does",
+        "type": "IDENTIFIER",
+        "line": 322,
+        "column": 42
+    },
+    "exist": {
+        "name": "exist",
+        "type": "IDENTIFIER",
+        "line": 322,
+        "column": 51
+    },
+    "json_file": {
+        "name": "json_file",
+        "type": "IDENTIFIER",
+        "line": 327,
+        "column": 42
+    },
+    "items": {
+        "name": "items",
+        "type": "IDENTIFIER",
+        "line": 329,
+        "column": 78
+    },
+    "ply": {
+        "name": "ply",
+        "type": "IDENTIFIER",
+        "line": 464,
+        "column": 8
+    },
+    "lex": {
+        "name": "lex",
+        "type": "IDENTIFIER",
+        "line": 464,
+        "column": 12
+    },
+    "Import": {
+        "name": "Import",
+        "type": "IDENTIFIER",
+        "line": 466,
+        "column": 31
+    },
+    "list": {
+        "name": "list",
+        "type": "IDENTIFIER",
+        "line": 466,
+        "column": 45
+    },
+    "Regular": {
+        "name": "Regular",
+        "type": "IDENTIFIER",
+        "line": 474,
+        "column": 3
+    },
+    "expression": {
+        "name": "expression",
+        "type": "IDENTIFIER",
+        "line": 474,
+        "column": 11
+    },
+    "rules": {
+        "name": "rules",
+        "type": "IDENTIFIER",
+        "line": 474,
+        "column": 22
+    },
+    "simple": {
+        "name": "simple",
+        "type": "IDENTIFIER",
+        "line": 474,
+        "column": 32
+    },
+    "t_ASSIGN": {
+        "name": "t_ASSIGN",
+        "type": "IDENTIFIER",
+        "line": 475,
+        "column": 1
+    },
+    "t_SEMICOLON": {
+        "name": "t_SEMICOLON",
+        "type": "IDENTIFIER",
+        "line": 476,
+        "column": 1
+    },
+    "t_LPAREN": {
+        "name": "t_LPAREN",
+        "type": "IDENTIFIER",
+        "line": 477,
+        "column": 1
+    },
+    "t_RPAREN": {
+        "name": "t_RPAREN",
+        "type": "IDENTIFIER",
+        "line": 478,
+        "column": 1
+    },
+    "t_LBRACE": {
+        "name": "t_LBRACE",
+        "type": "IDENTIFIER",
+        "line": 479,
+        "column": 1
+    },
+    "t_RBRACE": {
+        "name": "t_RBRACE",
+        "type": "IDENTIFIER",
+        "line": 480,
+        "column": 1
+    },
+    "t_PLUS": {
+        "name": "t_PLUS",
+        "type": "IDENTIFIER",
+        "line": 481,
+        "column": 1
+    },
+    "t_MINUS": {
+        "name": "t_MINUS",
+        "type": "IDENTIFIER",
+        "line": 482,
+        "column": 1
+    },
+    "t_MULTIPLY": {
+        "name": "t_MULTIPLY",
+        "type": "IDENTIFIER",
+        "line": 483,
+        "column": 1
+    },
+    "t_DIVIDE": {
+        "name": "t_DIVIDE",
+        "type": "IDENTIFIER",
+        "line": 484,
+        "column": 1
+    },
+    "t_LT": {
+        "name": "t_LT",
+        "type": "IDENTIFIER",
+        "line": 485,
+        "column": 1
+    },
+    "t_GT": {
+        "name": "t_GT",
+        "type": "IDENTIFIER",
+        "line": 486,
+        "column": 1
+    },
+    "t_LE": {
+        "name": "t_LE",
+        "type": "IDENTIFIER",
+        "line": 487,
+        "column": 1
+    },
+    "t_GE": {
+        "name": "t_GE",
+        "type": "IDENTIFIER",
+        "line": 488,
+        "column": 1
+    },
+    "t_EQ": {
+        "name": "t_EQ",
+        "type": "IDENTIFIER",
+        "line": 489,
+        "column": 1
+    },
+    "t_NE": {
+        "name": "t_NE",
+        "type": "IDENTIFIER",
+        "line": 490,
+        "column": 1
+    },
+    "t_COMMA": {
+        "name": "t_COMMA",
+        "type": "IDENTIFIER",
+        "line": 491,
+        "column": 1
+    },
+    "Reserved": {
+        "name": "Reserved",
+        "type": "IDENTIFIER",
+        "line": 493,
+        "column": 3
+    },
+    "words": {
+        "name": "words",
+        "type": "IDENTIFIER",
+        "line": 493,
+        "column": 12
+    },
+    "reserved": {
+        "name": "reserved",
+        "type": "IDENTIFIER",
+        "line": 494,
+        "column": 1
+    },
+    "INT": {
+        "name": "INT",
+        "type": "IDENTIFIER",
+        "line": 495,
+        "column": 13
+    },
+    "FLOAT": {
+        "name": "FLOAT",
+        "type": "IDENTIFIER",
+        "line": 496,
+        "column": 15
+    },
+    "IF": {
+        "name": "IF",
+        "type": "IDENTIFIER",
+        "line": 497,
+        "column": 12
+    },
+    "ELSE": {
+        "name": "ELSE",
+        "type": "IDENTIFIER",
+        "line": 498,
+        "column": 14
+    },
+    "RETURN": {
+        "name": "RETURN",
+        "type": "IDENTIFIER",
+        "line": 499,
+        "column": 16
+    },
+    "token": {
+        "name": "token",
+        "type": "IDENTIFIER",
+        "line": 502,
+        "column": 10
+    },
+    "actions": {
+        "name": "actions",
+        "type": "IDENTIFIER",
+        "line": 502,
+        "column": 16
+    },
+    "t_IDENTIFIER": {
+        "name": "t_IDENTIFIER",
+        "type": "IDENTIFIER",
+        "line": 503,
         "column": 5
     },
-    "else": {
-        "name": "else",
-        "type": "ELSE",
-        "line": 13,
+    "t": {
+        "name": "t",
+        "type": "IDENTIFIER",
+        "line": 503,
+        "column": 18
+    },
+    "A": {
+        "name": "A",
+        "type": "IDENTIFIER",
+        "line": 504,
+        "column": 8
+    },
+    "Za": {
+        "name": "Za",
+        "type": "IDENTIFIER",
+        "line": 504,
+        "column": 10
+    },
+    "z_": {
+        "name": "z_",
+        "type": "IDENTIFIER",
+        "line": 504,
+        "column": 13
+    },
+    "z0": {
+        "name": "z0",
+        "type": "IDENTIFIER",
+        "line": 504,
+        "column": 22
+    },
+    "_": {
+        "name": "_",
+        "type": "IDENTIFIER",
+        "line": 504,
+        "column": 26
+    },
+    "get": {
+        "name": "get",
+        "type": "IDENTIFIER",
+        "line": 505,
+        "column": 23
+    },
+    "value": {
+        "name": "value",
+        "type": "IDENTIFIER",
+        "line": 505,
+        "column": 29
+    },
+    "IDENTIFIER": {
+        "name": "IDENTIFIER",
+        "type": "IDENTIFIER",
+        "line": 505,
+        "column": 37
+    },
+    "Check": {
+        "name": "Check",
+        "type": "IDENTIFIER",
+        "line": 505,
+        "column": 53
+    },
+    "find_column": {
+        "name": "find_column",
+        "type": "IDENTIFIER",
+        "line": 506,
+        "column": 16
+    },
+    "lexdata": {
+        "name": "lexdata",
+        "type": "IDENTIFIER",
+        "line": 506,
+        "column": 36
+    },
+    "Add": {
+        "name": "Add",
+        "type": "IDENTIFIER",
+        "line": 506,
+        "column": 51
+    },
+    "attribute": {
+        "name": "attribute",
+        "type": "IDENTIFIER",
+        "line": 506,
+        "column": 62
+    },
+    "t_FLOAT_LITERAL": {
+        "name": "t_FLOAT_LITERAL",
+        "type": "IDENTIFIER",
+        "line": 510,
+        "column": 5
+    },
+    "d": {
+        "name": "d",
+        "type": "IDENTIFIER",
+        "line": 511,
+        "column": 8
+    },
+    "t_INT_LITERAL": {
+        "name": "t_INT_LITERAL",
+        "type": "IDENTIFIER",
+        "line": 516,
+        "column": 5
+    },
+    "Track": {
+        "name": "Track",
+        "type": "IDENTIFIER",
+        "line": 522,
+        "column": 3
+    },
+    "newlines": {
+        "name": "newlines",
+        "type": "IDENTIFIER",
+        "line": 522,
+        "column": 9
+    },
+    "t_newline": {
+        "name": "t_newline",
+        "type": "IDENTIFIER",
+        "line": 523,
+        "column": 5
+    },
+    "Ignored": {
+        "name": "Ignored",
+        "type": "IDENTIFIER",
+        "line": 527,
+        "column": 3
+    },
+    "characters": {
+        "name": "characters",
+        "type": "IDENTIFIER",
+        "line": 527,
+        "column": 11
+    },
+    "t_ignore": {
+        "name": "t_ignore",
+        "type": "IDENTIFIER",
+        "line": 528,
+        "column": 1
+    },
+    "Comments": {
+        "name": "Comments",
+        "type": "IDENTIFIER",
+        "line": 530,
+        "column": 3
+    },
+    "t_comment_singleline": {
+        "name": "t_comment_singleline",
+        "type": "IDENTIFIER",
+        "line": 531,
+        "column": 5
+    },
+    "t_comment_multiline": {
+        "name": "t_comment_multiline",
+        "type": "IDENTIFIER",
+        "line": 535,
+        "column": 5
+    },
+    "count": {
+        "name": "count",
+        "type": "IDENTIFIER",
+        "line": 537,
+        "column": 31
+    },
+    "rule": {
+        "name": "rule",
+        "type": "IDENTIFIER",
+        "line": 540,
+        "column": 18
+    },
+    "t_error": {
+        "name": "t_error",
+        "type": "IDENTIFIER",
+        "line": 541,
+        "column": 5
+    },
+    "Illegal": {
+        "name": "Illegal",
+        "type": "IDENTIFIER",
+        "line": 543,
+        "column": 42
+    },
+    "character": {
+        "name": "character",
+        "type": "IDENTIFIER",
+        "line": 543,
+        "column": 50
+    },
+    "skip": {
+        "name": "skip",
+        "type": "IDENTIFIER",
+        "line": 544,
+        "column": 13
+    },
+    "Compute": {
+        "name": "Compute",
+        "type": "IDENTIFIER",
+        "line": 546,
+        "column": 3
+    },
+    "numbers": {
+        "name": "numbers",
+        "type": "IDENTIFIER",
+        "line": 546,
+        "column": 18
+    },
+    "input": {
+        "name": "input",
+        "type": "IDENTIFIER",
+        "line": 547,
+        "column": 17
+    },
+    "number": {
+        "name": "number",
+        "type": "IDENTIFIER",
+        "line": 549,
+        "column": 24
+    },
+    "last_cr": {
+        "name": "last_cr",
+        "type": "IDENTIFIER",
+        "line": 551,
+        "column": 5
+    },
+    "rfind": {
+        "name": "rfind",
+        "type": "IDENTIFIER",
+        "line": 551,
+        "column": 21
+    },
+    "lexpos": {
+        "name": "lexpos",
+        "type": "IDENTIFIER",
+        "line": 551,
+        "column": 42
+    },
+    "Build": {
+        "name": "Build",
+        "type": "IDENTIFIER",
+        "line": 556,
+        "column": 3
+    },
+    "tokenize": {
+        "name": "tokenize",
+        "type": "IDENTIFIER",
+        "line": 559,
+        "column": 5
+    },
+    "Tokenize": {
+        "name": "Tokenize",
+        "type": "IDENTIFIER",
+        "line": 561,
+        "column": 5
+    },
+    "information": {
+        "name": "information",
+        "type": "IDENTIFIER",
+        "line": 561,
+        "column": 69
+    },
+    "tokens_list": {
+        "name": "tokens_list",
+        "type": "IDENTIFIER",
+        "line": 564,
+        "column": 5
+    },
+    "while": {
+        "name": "while",
+        "type": "IDENTIFIER",
+        "line": 565,
+        "column": 5
+    },
+    "tok": {
+        "name": "tok",
+        "type": "IDENTIFIER",
+        "line": 566,
+        "column": 9
+    },
+    "break": {
+        "name": "break",
+        "type": "IDENTIFIER",
+        "line": 568,
+        "column": 13
+    },
+    "Assign": {
+        "name": "Assign",
+        "type": "IDENTIFIER",
+        "line": 569,
+        "column": 48
+    },
+    "names": {
+        "name": "names",
+        "type": "IDENTIFIER",
+        "line": 574,
+        "column": 17
+    },
+    "This": {
+        "name": "This",
+        "type": "IDENTIFIER",
+        "line": 574,
+        "column": 24
+    },
+    "always": {
+        "name": "always",
+        "type": "IDENTIFIER",
+        "line": 574,
+        "column": 32
+    },
+    "required": {
+        "name": "required",
+        "type": "IDENTIFIER",
+        "line": 574,
+        "column": 39
+    },
+    "by": {
+        "name": "by",
+        "type": "IDENTIFIER",
+        "line": 574,
+        "column": 48
+    },
+    "PLY": {
+        "name": "PLY",
+        "type": "IDENTIFIER",
+        "line": 574,
+        "column": 51
+    },
+    "Operators": {
+        "name": "Operators",
+        "type": "IDENTIFIER",
+        "line": 576,
         "column": 7
+    },
+    "PLUS": {
+        "name": "PLUS",
+        "type": "IDENTIFIER",
+        "line": 577,
+        "column": 6
+    },
+    "MINUS": {
+        "name": "MINUS",
+        "type": "IDENTIFIER",
+        "line": 578,
+        "column": 6
+    },
+    "MULTIPLY": {
+        "name": "MULTIPLY",
+        "type": "IDENTIFIER",
+        "line": 579,
+        "column": 6
+    },
+    "DIVIDE": {
+        "name": "DIVIDE",
+        "type": "IDENTIFIER",
+        "line": 580,
+        "column": 6
+    },
+    "ASSIGN": {
+        "name": "ASSIGN",
+        "type": "IDENTIFIER",
+        "line": 581,
+        "column": 6
+    },
+    "Delimiters": {
+        "name": "Delimiters",
+        "type": "IDENTIFIER",
+        "line": 583,
+        "column": 7
+    },
+    "LPAREN": {
+        "name": "LPAREN",
+        "type": "IDENTIFIER",
+        "line": 584,
+        "column": 6
+    },
+    "RPAREN": {
+        "name": "RPAREN",
+        "type": "IDENTIFIER",
+        "line": 585,
+        "column": 6
+    },
+    "LBRACE": {
+        "name": "LBRACE",
+        "type": "IDENTIFIER",
+        "line": 586,
+        "column": 6
+    },
+    "RBRACE": {
+        "name": "RBRACE",
+        "type": "IDENTIFIER",
+        "line": 587,
+        "column": 6
+    },
+    "SEMICOLON": {
+        "name": "SEMICOLON",
+        "type": "IDENTIFIER",
+        "line": 588,
+        "column": 6
+    },
+    "COMMA": {
+        "name": "COMMA",
+        "type": "IDENTIFIER",
+        "line": 589,
+        "column": 6
+    },
+    "Identifiers": {
+        "name": "Identifiers",
+        "type": "IDENTIFIER",
+        "line": 591,
+        "column": 7
+    },
+    "literals": {
+        "name": "literals",
+        "type": "IDENTIFIER",
+        "line": 591,
+        "column": 23
+    },
+    "INT_LITERAL": {
+        "name": "INT_LITERAL",
+        "type": "IDENTIFIER",
+        "line": 593,
+        "column": 6
+    },
+    "FLOAT_LITERAL": {
+        "name": "FLOAT_LITERAL",
+        "type": "IDENTIFIER",
+        "line": 594,
+        "column": 6
+    },
+    "Comparison": {
+        "name": "Comparison",
+        "type": "IDENTIFIER",
+        "line": 596,
+        "column": 7
+    },
+    "LT": {
+        "name": "LT",
+        "type": "IDENTIFIER",
+        "line": 597,
+        "column": 6
+    },
+    "GT": {
+        "name": "GT",
+        "type": "IDENTIFIER",
+        "line": 598,
+        "column": 6
+    },
+    "LE": {
+        "name": "LE",
+        "type": "IDENTIFIER",
+        "line": 599,
+        "column": 6
+    },
+    "GE": {
+        "name": "GE",
+        "type": "IDENTIFIER",
+        "line": 600,
+        "column": 6
+    },
+    "EQ": {
+        "name": "EQ",
+        "type": "IDENTIFIER",
+        "line": 601,
+        "column": 6
+    },
+    "NE": {
+        "name": "NE",
+        "type": "IDENTIFIER",
+        "line": 602,
+        "column": 6
+    },
+    "mapping": {
+        "name": "mapping",
+        "type": "IDENTIFIER",
+        "line": 605,
+        "column": 18
+    },
+    "WHILE": {
+        "name": "WHILE",
+        "type": "IDENTIFIER",
+        "line": 611,
+        "column": 17
+    },
+    "Combine": {
+        "name": "Combine",
+        "type": "IDENTIFIER",
+        "line": 615,
+        "column": 3
+    },
+    "__all__": {
+        "name": "__all__",
+        "type": "IDENTIFIER",
+        "line": 621,
+        "column": 1
+    },
+    "sys": {
+        "name": "sys",
+        "type": "IDENTIFIER",
+        "line": 624,
+        "column": 10
+    },
+    "parse_tokens": {
+        "name": "parse_tokens",
+        "type": "IDENTIFIER",
+        "line": 626,
+        "column": 22
+    },
+    "ast_visualizer": {
+        "name": "ast_visualizer",
+        "type": "IDENTIFIER",
+        "line": 627,
+        "column": 14
+    },
+    "ASTVisualizer": {
+        "name": "ASTVisualizer",
+        "type": "IDENTIFIER",
+        "line": 627,
+        "column": 36
+    },
+    "file_path_for_symbol_table": {
+        "name": "file_path_for_symbol_table",
+        "type": "IDENTIFIER",
+        "line": 630,
+        "column": 3
+    },
+    "join": {
+        "name": "join",
+        "type": "IDENTIFIER",
+        "line": 630,
+        "column": 40
+    },
+    "getcwd": {
+        "name": "getcwd",
+        "type": "IDENTIFIER",
+        "line": 630,
+        "column": 48
+    },
+    "argv": {
+        "name": "argv",
+        "type": "IDENTIFIER",
+        "line": 633,
+        "column": 18
+    },
+    "Usage": {
+        "name": "Usage",
+        "type": "IDENTIFIER",
+        "line": 634,
+        "column": 18
+    },
+    "python": {
+        "name": "python",
+        "type": "IDENTIFIER",
+        "line": 634,
+        "column": 25
+    },
+    "path_to_c_file": {
+        "name": "path_to_c_file",
+        "type": "IDENTIFIER",
+        "line": 634,
+        "column": 41
+    },
+    "FileNotFoundError": {
+        "name": "FileNotFoundError",
+        "type": "IDENTIFIER",
+        "line": 642,
+        "column": 14
+    },
+    "Analysis": {
+        "name": "Analysis",
+        "type": "IDENTIFIER",
+        "line": 646,
+        "column": 28
+    },
+    "nTokens": {
+        "name": "nTokens",
+        "type": "IDENTIFIER",
+        "line": 649,
+        "column": 15
+    },
+    "Type": {
+        "name": "Type",
+        "type": "IDENTIFIER",
+        "line": 651,
+        "column": 19
+    },
+    "Value": {
+        "name": "Value",
+        "type": "IDENTIFIER",
+        "line": 651,
+        "column": 37
+    },
+    "Line": {
+        "name": "Line",
+        "type": "IDENTIFIER",
+        "line": 651,
+        "column": 57
+    },
+    "Column": {
+        "name": "Column",
+        "type": "IDENTIFIER",
+        "line": 651,
+        "column": 77
+    },
+    "ast": {
+        "name": "ast",
+        "type": "IDENTIFIER",
+        "line": 654,
+        "column": 7
+    },
+    "nAbstract": {
+        "name": "nAbstract",
+        "type": "IDENTIFIER",
+        "line": 656,
+        "column": 15
+    },
+    "Tree": {
+        "name": "Tree",
+        "type": "IDENTIFIER",
+        "line": 656,
+        "column": 32
+    },
+    "Visualize": {
+        "name": "Visualize",
+        "type": "IDENTIFIER",
+        "line": 659,
+        "column": 9
+    },
+    "Visualization": {
+        "name": "Visualization",
+        "type": "IDENTIFIER",
+        "line": 660,
+        "column": 24
+    },
+    "visualizer": {
+        "name": "visualizer",
+        "type": "IDENTIFIER",
+        "line": 661,
+        "column": 7
+    },
+    "visualize": {
+        "name": "visualize",
+        "type": "IDENTIFIER",
+        "line": 662,
+        "column": 18
+    },
+    "output_filename": {
+        "name": "output_filename",
+        "type": "IDENTIFIER",
+        "line": 662,
+        "column": 33
+    },
+    "You": {
+        "name": "You",
+        "type": "IDENTIFIER",
+        "line": 662,
+        "column": 66
+    },
+    "can": {
+        "name": "can",
+        "type": "IDENTIFIER",
+        "line": 662,
+        "column": 70
+    },
+    "change": {
+        "name": "change",
+        "type": "IDENTIFIER",
+        "line": 662,
+        "column": 74
+    },
+    "needed": {
+        "name": "needed",
+        "type": "IDENTIFIER",
+        "line": 662,
+        "column": 97
+    },
+    "__name__": {
+        "name": "__name__",
+        "type": "IDENTIFIER",
+        "line": 669,
+        "column": 6
+    },
+    "__main__": {
+        "name": "__main__",
+        "type": "IDENTIFIER",
+        "line": 669,
+        "column": 19
+    },
+    "path_to_code_file": {
+        "name": "path_to_code_file",
+        "type": "IDENTIFIER",
+        "line": 686,
+        "column": 39
+    },
+    "Saves": {
+        "name": "Saves",
+        "type": "IDENTIFIER",
+        "line": 715,
+        "column": 68
+    },
+    "nAST": {
+        "name": "nAST",
+        "type": "IDENTIFIER",
+        "line": 717,
+        "column": 17
+    },
+    "generated": {
+        "name": "generated",
+        "type": "IDENTIFIER",
+        "line": 717,
+        "column": 26
+    },
+    "due": {
+        "name": "due",
+        "type": "IDENTIFIER",
+        "line": 717,
+        "column": 36
+    },
+    "export": {
+        "name": "export",
+        "type": "IDENTIFIER",
+        "line": 719,
+        "column": 19
+    },
+    "itertools": {
+        "name": "itertools",
+        "type": "IDENTIFIER",
+        "line": 733,
+        "column": 8
+    },
+    "ASTNode": {
+        "name": "ASTNode",
+        "type": "IDENTIFIER",
+        "line": 735,
+        "column": 7
+    },
+    "_id_iter": {
+        "name": "_id_iter",
+        "type": "IDENTIFIER",
+        "line": 736,
+        "column": 5
+    },
+    "id": {
+        "name": "id",
+        "type": "IDENTIFIER",
+        "line": 739,
+        "column": 14
+    },
+    "next": {
+        "name": "next",
+        "type": "IDENTIFIER",
+        "line": 739,
+        "column": 19
+    },
+    "get_label": {
+        "name": "get_label",
+        "type": "IDENTIFIER",
+        "line": 741,
+        "column": 9
+    },
+    "__class__": {
+        "name": "__class__",
+        "type": "IDENTIFIER",
+        "line": 742,
+        "column": 21
+    },
+    "Program": {
+        "name": "Program",
+        "type": "IDENTIFIER",
+        "line": 747,
+        "column": 7
+    },
+    "declarations": {
+        "name": "declarations",
+        "type": "IDENTIFIER",
+        "line": 748,
+        "column": 24
+    },
+    "super": {
+        "name": "super",
+        "type": "IDENTIFIER",
+        "line": 749,
+        "column": 9
+    },
+    "FunctionDeclaration": {
+        "name": "FunctionDeclaration",
+        "type": "IDENTIFIER",
+        "line": 758,
+        "column": 7
+    },
+    "return_type": {
+        "name": "return_type",
+        "type": "IDENTIFIER",
+        "line": 759,
+        "column": 24
+    },
+    "params": {
+        "name": "params",
+        "type": "IDENTIFIER",
+        "line": 759,
+        "column": 43
+    },
+    "body": {
+        "name": "body",
+        "type": "IDENTIFIER",
+        "line": 759,
+        "column": 51
+    },
+    "VariableDeclaration": {
+        "name": "VariableDeclaration",
+        "type": "IDENTIFIER",
+        "line": 772,
+        "column": 7
+    },
+    "var_type": {
+        "name": "var_type",
+        "type": "IDENTIFIER",
+        "line": 773,
+        "column": 24
+    },
+    "initializer": {
+        "name": "initializer",
+        "type": "IDENTIFIER",
+        "line": 773,
+        "column": 40
+    },
+    "IfStatement": {
+        "name": "IfStatement",
+        "type": "IDENTIFIER",
+        "line": 787,
+        "column": 7
+    },
+    "condition": {
+        "name": "condition",
+        "type": "IDENTIFIER",
+        "line": 788,
+        "column": 24
+    },
+    "then_branch": {
+        "name": "then_branch",
+        "type": "IDENTIFIER",
+        "line": 788,
+        "column": 35
+    },
+    "else_branch": {
+        "name": "else_branch",
+        "type": "IDENTIFIER",
+        "line": 788,
+        "column": 48
+    },
+    "ReturnStatement": {
+        "name": "ReturnStatement",
+        "type": "IDENTIFIER",
+        "line": 800,
+        "column": 7
+    },
+    "BinaryOperation": {
+        "name": "BinaryOperation",
+        "type": "IDENTIFIER",
+        "line": 811,
+        "column": 7
+    },
+    "left": {
+        "name": "left",
+        "type": "IDENTIFIER",
+        "line": 812,
+        "column": 24
+    },
+    "operator": {
+        "name": "operator",
+        "type": "IDENTIFIER",
+        "line": 812,
+        "column": 30
+    },
+    "right": {
+        "name": "right",
+        "type": "IDENTIFIER",
+        "line": 812,
+        "column": 40
+    },
+    "UnaryOperation": {
+        "name": "UnaryOperation",
+        "type": "IDENTIFIER",
+        "line": 824,
+        "column": 7
+    },
+    "operand": {
+        "name": "operand",
+        "type": "IDENTIFIER",
+        "line": 825,
+        "column": 34
+    },
+    "Identifier": {
+        "name": "Identifier",
+        "type": "IDENTIFIER",
+        "line": 836,
+        "column": 7
+    },
+    "Literal": {
+        "name": "Literal",
+        "type": "IDENTIFIER",
+        "line": 847,
+        "column": 7
+    },
+    "CompoundStatement": {
+        "name": "CompoundStatement",
+        "type": "IDENTIFIER",
+        "line": 858,
+        "column": 7
+    },
+    "statements": {
+        "name": "statements",
+        "type": "IDENTIFIER",
+        "line": 859,
+        "column": 24
+    },
+    "FunctionCall": {
+        "name": "FunctionCall",
+        "type": "IDENTIFIER",
+        "line": 869,
+        "column": 9
+    },
+    "args": {
+        "name": "args",
+        "type": "IDENTIFIER",
+        "line": 870,
+        "column": 32
+    },
+    "Should": {
+        "name": "Should",
+        "type": "IDENTIFIER",
+        "line": 872,
+        "column": 31
+    },
+    "be": {
+        "name": "be",
+        "type": "IDENTIFIER",
+        "line": 872,
+        "column": 38
+    },
+    "expressions": {
+        "name": "expressions",
+        "type": "IDENTIFIER",
+        "line": 873,
+        "column": 39
+    },
+    "yacc": {
+        "name": "yacc",
+        "type": "IDENTIFIER",
+        "line": 893,
+        "column": 12
+    },
+    "precedence": {
+        "name": "precedence",
+        "type": "IDENTIFIER",
+        "line": 912,
+        "column": 10
+    },
+    "resolve": {
+        "name": "resolve",
+        "type": "IDENTIFIER",
+        "line": 912,
+        "column": 30
+    },
+    "ambiguities": {
+        "name": "ambiguities",
+        "type": "IDENTIFIER",
+        "line": 912,
+        "column": 38
+    },
+    "Equality": {
+        "name": "Equality",
+        "type": "IDENTIFIER",
+        "line": 914,
+        "column": 42
+    },
+    "operators": {
+        "name": "operators",
+        "type": "IDENTIFIER",
+        "line": 914,
+        "column": 51
+    },
+    "Relational": {
+        "name": "Relational",
+        "type": "IDENTIFIER",
+        "line": 915,
+        "column": 43
+    },
+    "Addition": {
+        "name": "Addition",
+        "type": "IDENTIFIER",
+        "line": 916,
+        "column": 42
+    },
+    "subtraction": {
+        "name": "subtraction",
+        "type": "IDENTIFIER",
+        "line": 916,
+        "column": 55
+    },
+    "Multiplication": {
+        "name": "Multiplication",
+        "type": "IDENTIFIER",
+        "line": 917,
+        "column": 42
+    },
+    "division": {
+        "name": "division",
+        "type": "IDENTIFIER",
+        "line": 917,
+        "column": 61
+    },
+    "UMINUS": {
+        "name": "UMINUS",
+        "type": "IDENTIFIER",
+        "line": 918,
+        "column": 16
+    },
+    "Unary": {
+        "name": "Unary",
+        "type": "IDENTIFIER",
+        "line": 918,
+        "column": 42
+    },
+    "minus": {
+        "name": "minus",
+        "type": "IDENTIFIER",
+        "line": 918,
+        "column": 48
+    },
+    "Dictionary": {
+        "name": "Dictionary",
+        "type": "IDENTIFIER",
+        "line": 921,
+        "column": 3
+    },
+    "hold": {
+        "name": "hold",
+        "type": "IDENTIFIER",
+        "line": 921,
+        "column": 17
+    },
+    "nodes": {
+        "name": "nodes",
+        "type": "IDENTIFIER",
+        "line": 921,
+        "column": 30
+    },
+    "optional": {
+        "name": "optional",
+        "type": "IDENTIFIER",
+        "line": 921,
+        "column": 37
+    },
+    "used": {
+        "name": "used",
+        "type": "IDENTIFIER",
+        "line": 921,
+        "column": 54
+    },
+    "tracking": {
+        "name": "tracking",
+        "type": "IDENTIFIER",
+        "line": 921,
+        "column": 63
+    },
+    "p_program": {
+        "name": "p_program",
+        "type": "IDENTIFIER",
+        "line": 924,
+        "column": 5
+    },
+    "program": {
+        "name": "program",
+        "type": "IDENTIFIER",
+        "line": 925,
+        "column": 8
+    },
+    "p_declarations": {
+        "name": "p_declarations",
+        "type": "IDENTIFIER",
+        "line": 929,
+        "column": 5
+    },
+    "declaration": {
+        "name": "declaration",
+        "type": "IDENTIFIER",
+        "line": 930,
+        "column": 36
+    },
+    "p_declaration": {
+        "name": "p_declaration",
+        "type": "IDENTIFIER",
+        "line": 937,
+        "column": 5
+    },
+    "var_declaration": {
+        "name": "var_declaration",
+        "type": "IDENTIFIER",
+        "line": 938,
+        "column": 22
+    },
+    "func_declaration": {
+        "name": "func_declaration",
+        "type": "IDENTIFIER",
+        "line": 939,
+        "column": 22
+    },
+    "p_var_declaration": {
+        "name": "p_var_declaration",
+        "type": "IDENTIFIER",
+        "line": 942,
+        "column": 5
+    },
+    "type_specifier": {
+        "name": "type_specifier",
+        "type": "IDENTIFIER",
+        "line": 943,
+        "column": 26
+    },
+    "var_name": {
+        "name": "var_name",
+        "type": "IDENTIFIER",
+        "line": 946,
+        "column": 5
+    },
+    "p_type_specifier": {
+        "name": "p_type_specifier",
+        "type": "IDENTIFIER",
+        "line": 953,
+        "column": 5
+    },
+    "p_func_declaration": {
+        "name": "p_func_declaration",
+        "type": "IDENTIFIER",
+        "line": 958,
+        "column": 5
+    },
+    "compound_stmt": {
+        "name": "compound_stmt",
+        "type": "IDENTIFIER",
+        "line": 959,
+        "column": 74
+    },
+    "func_name": {
+        "name": "func_name",
+        "type": "IDENTIFIER",
+        "line": 961,
+        "column": 5
+    },
+    "p_params": {
+        "name": "p_params",
+        "type": "IDENTIFIER",
+        "line": 966,
+        "column": 5
+    },
+    "param_list": {
+        "name": "param_list",
+        "type": "IDENTIFIER",
+        "line": 967,
+        "column": 17
+    },
+    "empty": {
+        "name": "empty",
+        "type": "IDENTIFIER",
+        "line": 968,
+        "column": 17
+    },
+    "p_param_list": {
+        "name": "p_param_list",
+        "type": "IDENTIFIER",
+        "line": 971,
+        "column": 5
+    },
+    "param": {
+        "name": "param",
+        "type": "IDENTIFIER",
+        "line": 972,
+        "column": 38
+    },
+    "p_param": {
+        "name": "p_param",
+        "type": "IDENTIFIER",
+        "line": 979,
+        "column": 5
+    },
+    "p_compound_stmt": {
+        "name": "p_compound_stmt",
+        "type": "IDENTIFIER",
+        "line": 985,
+        "column": 5
+    },
+    "stmt_list": {
+        "name": "stmt_list",
+        "type": "IDENTIFIER",
+        "line": 986,
+        "column": 31
+    },
+    "p_stmt_list": {
+        "name": "p_stmt_list",
+        "type": "IDENTIFIER",
+        "line": 989,
+        "column": 5
+    },
+    "statement": {
+        "name": "statement",
+        "type": "IDENTIFIER",
+        "line": 990,
+        "column": 30
+    },
+    "p_statement": {
+        "name": "p_statement",
+        "type": "IDENTIFIER",
+        "line": 997,
+        "column": 5
+    },
+    "expr_stmt": {
+        "name": "expr_stmt",
+        "type": "IDENTIFIER",
+        "line": 998,
+        "column": 20
+    },
+    "if_stmt": {
+        "name": "if_stmt",
+        "type": "IDENTIFIER",
+        "line": 1001,
+        "column": 20
+    },
+    "return_stmt": {
+        "name": "return_stmt",
+        "type": "IDENTIFIER",
+        "line": 1002,
+        "column": 20
+    },
+    "p_if_stmt": {
+        "name": "p_if_stmt",
+        "type": "IDENTIFIER",
+        "line": 1005,
+        "column": 5
+    },
+    "p_return_stmt": {
+        "name": "p_return_stmt",
+        "type": "IDENTIFIER",
+        "line": 1013,
+        "column": 5
+    },
+    "expr": {
+        "name": "expr",
+        "type": "IDENTIFIER",
+        "line": 1015,
+        "column": 5
+    },
+    "p_expr_stmt": {
+        "name": "p_expr_stmt",
+        "type": "IDENTIFIER",
+        "line": 1018,
+        "column": 5
+    },
+    "p_expression_binop": {
+        "name": "p_expression_binop",
+        "type": "IDENTIFIER",
+        "line": 1022,
+        "column": 5
+    },
+    "p_expression_uminus": {
+        "name": "p_expression_uminus",
+        "type": "IDENTIFIER",
+        "line": 1038,
+        "column": 5
+    },
+    "prec": {
+        "name": "prec",
+        "type": "IDENTIFIER",
+        "line": 1039,
+        "column": 39
+    },
+    "p_expression_group": {
+        "name": "p_expression_group",
+        "type": "IDENTIFIER",
+        "line": 1043,
+        "column": 5
+    },
+    "p_expression_number": {
+        "name": "p_expression_number",
+        "type": "IDENTIFIER",
+        "line": 1047,
+        "column": 5
+    },
+    "p_expression_identifier": {
+        "name": "p_expression_identifier",
+        "type": "IDENTIFIER",
+        "line": 1052,
+        "column": 5
+    },
+    "p_expression_call": {
+        "name": "p_expression_call",
+        "type": "IDENTIFIER",
+        "line": 1056,
+        "column": 5
+    },
+    "arg_list": {
+        "name": "arg_list",
+        "type": "IDENTIFIER",
+        "line": 1057,
+        "column": 39
+    },
+    "p_arg_list": {
+        "name": "p_arg_list",
+        "type": "IDENTIFIER",
+        "line": 1060,
+        "column": 5
+    },
+    "elif": {
+        "name": "elif",
+        "type": "IDENTIFIER",
+        "line": 1066,
+        "column": 5
+    },
+    "p_empty": {
+        "name": "p_empty",
+        "type": "IDENTIFIER",
+        "line": 1074,
+        "column": 5
+    },
+    "Explicitly": {
+        "name": "Explicitly",
+        "type": "IDENTIFIER",
+        "line": 1076,
+        "column": 20
+    },
+    "set": {
+        "name": "set",
+        "type": "IDENTIFIER",
+        "line": 1076,
+        "column": 31
+    },
+    "clarity": {
+        "name": "clarity",
+        "type": "IDENTIFIER",
+        "line": 1076,
+        "column": 47
+    },
+    "p_error": {
+        "name": "p_error",
+        "type": "IDENTIFIER",
+        "line": 1078,
+        "column": 7
+    },
+    "getattr": {
+        "name": "getattr",
+        "type": "IDENTIFIER",
+        "line": 1080,
+        "column": 20
+    },
+    "Unknown": {
+        "name": "Unknown",
+        "type": "IDENTIFIER",
+        "line": 1080,
+        "column": 42
+    },
+    "Safely": {
+        "name": "Safely",
+        "type": "IDENTIFIER",
+        "line": 1080,
+        "column": 55
+    },
+    "EOF": {
+        "name": "EOF",
+        "type": "IDENTIFIER",
+        "line": 1083,
+        "column": 34
+    },
+    "Parse": {
+        "name": "Parse",
+        "type": "IDENTIFIER",
+        "line": 1097,
+        "column": 5
+    },
+    "collections": {
+        "name": "collections",
+        "type": "IDENTIFIER",
+        "line": 1099,
+        "column": 10
+    },
+    "deque": {
+        "name": "deque",
+        "type": "IDENTIFIER",
+        "line": 1099,
+        "column": 29
+    },
+    "token_queue": {
+        "name": "token_queue",
+        "type": "IDENTIFIER",
+        "line": 1101,
+        "column": 5
+    },
+    "TokenLexer": {
+        "name": "TokenLexer",
+        "type": "IDENTIFIER",
+        "line": 1103,
+        "column": 11
+    },
+    "popleft": {
+        "name": "popleft",
+        "type": "IDENTIFIER",
+        "line": 1109,
+        "column": 36
+    },
+    "parse": {
+        "name": "parse",
+        "type": "IDENTIFIER",
+        "line": 1114,
+        "column": 18
+    },
+    "parsetab": {
+        "name": "parsetab",
+        "type": "IDENTIFIER",
+        "line": 1117,
+        "column": 3
+    },
+    "automatically": {
+        "name": "automatically",
+        "type": "IDENTIFIER",
+        "line": 1118,
+        "column": 16
+    },
+    "Do": {
+        "name": "Do",
+        "type": "IDENTIFIER",
+        "line": 1118,
+        "column": 41
+    },
+    "edit": {
+        "name": "edit",
+        "type": "IDENTIFIER",
+        "line": 1118,
+        "column": 48
+    },
+    "pylint": {
+        "name": "pylint",
+        "type": "IDENTIFIER",
+        "line": 1119,
+        "column": 3
+    },
+    "disable": {
+        "name": "disable",
+        "type": "IDENTIFIER",
+        "line": 1119,
+        "column": 11
+    },
+    "W": {
+        "name": "W",
+        "type": "IDENTIFIER",
+        "line": 1119,
+        "column": 19
+    },
+    "R": {
+        "name": "R",
+        "type": "IDENTIFIER",
+        "line": 1119,
+        "column": 23
+    },
+    "_tabversion": {
+        "name": "_tabversion",
+        "type": "IDENTIFIER",
+        "line": 1120,
+        "column": 1
+    },
+    "_lr_method": {
+        "name": "_lr_method",
+        "type": "IDENTIFIER",
+        "line": 1122,
+        "column": 1
+    },
+    "LALR": {
+        "name": "LALR",
+        "type": "IDENTIFIER",
+        "line": 1122,
+        "column": 15
+    },
+    "_lr_signature": {
+        "name": "_lr_signature",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 1
+    },
+    "leftEQNEleftLTLEGTGEleftPLUSMINUSleftMULTIPLYDIVIDErightUMINUSASSIGN": {
+        "name": "leftEQNEleftLTLEGTGEleftPLUSMINUSleftMULTIPLYDIVIDErightUMINUSASSIGN",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 18
+    },
+    "SEMICOLONprogram": {
+        "name": "SEMICOLONprogram",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 228
+    },
+    "declarationsdeclarations": {
+        "name": "declarationsdeclarations",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 247
+    },
+    "declarationdeclaration": {
+        "name": "declarationdeclaration",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 322
+    },
+    "func_declarationvar_declaration": {
+        "name": "func_declarationvar_declaration",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 385
+    },
+    "SEMICOLONtype_specifier": {
+        "name": "SEMICOLONtype_specifier",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 525
+    },
+    "FLOATfunc_declaration": {
+        "name": "FLOATfunc_declaration",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 580
+    },
+    "compound_stmtparams": {
+        "name": "compound_stmtparams",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 651
+    },
+    "emptyparam_list": {
+        "name": "emptyparam_list",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 701
+    },
+    "paramparam": {
+        "name": "paramparam",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 763
+    },
+    "IDENTIFIERcompound_stmt": {
+        "name": "IDENTIFIERcompound_stmt",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 791
+    },
+    "RBRACEstmt_list": {
+        "name": "RBRACEstmt_list",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 834
+    },
+    "emptystatement": {
+        "name": "emptystatement",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 892
+    },
+    "return_stmtif_stmt": {
+        "name": "return_stmtif_stmt",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 1037
+    },
+    "statementreturn_stmt": {
+        "name": "statementreturn_stmt",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 1157
+    },
+    "SEMICOLONexpr_stmt": {
+        "name": "SEMICOLONexpr_stmt",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 1198
+    },
+    "SEMICOLONexpression": {
+        "name": "SEMICOLONexpression",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 1230
+    },
+    "expressionexpression": {
+        "name": "expressionexpression",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 1695
+    },
+    "UMINUSexpression": {
+        "name": "UMINUSexpression",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 1741
+    },
+    "RPARENexpression": {
+        "name": "RPARENexpression",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 1778
+    },
+    "FLOAT_LITERALexpression": {
+        "name": "FLOAT_LITERALexpression",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 1830
+    },
+    "IDENTIFIERexpression": {
+        "name": "IDENTIFIERexpression",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 1856
+    },
+    "RPARENarg_list": {
+        "name": "RPARENarg_list",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 1906
+    },
+    "emptyempty": {
+        "name": "emptyempty",
+        "type": "IDENTIFIER",
+        "line": 1124,
+        "column": 1998
+    },
+    "_lr_action_items": {
+        "name": "_lr_action_items",
+        "type": "IDENTIFIER",
+        "line": 1126,
+        "column": 1
+    },
+    "end": {
+        "name": "end",
+        "type": "IDENTIFIER",
+        "line": 1126,
+        "column": 379
+    },
+    "_lr_action": {
+        "name": "_lr_action",
+        "type": "IDENTIFIER",
+        "line": 1128,
+        "column": 1
+    },
+    "_k": {
+        "name": "_k",
+        "type": "IDENTIFIER",
+        "line": 1129,
+        "column": 5
+    },
+    "_v": {
+        "name": "_v",
+        "type": "IDENTIFIER",
+        "line": 1129,
+        "column": 9
+    },
+    "_x": {
+        "name": "_x",
+        "type": "IDENTIFIER",
+        "line": 1130,
+        "column": 8
+    },
+    "_y": {
+        "name": "_y",
+        "type": "IDENTIFIER",
+        "line": 1130,
+        "column": 11
+    },
+    "zip": {
+        "name": "zip",
+        "type": "IDENTIFIER",
+        "line": 1130,
+        "column": 17
+    },
+    "del": {
+        "name": "del",
+        "type": "IDENTIFIER",
+        "line": 1133,
+        "column": 1
+    },
+    "_lr_goto_items": {
+        "name": "_lr_goto_items",
+        "type": "IDENTIFIER",
+        "line": 1135,
+        "column": 1
+    },
+    "_lr_goto": {
+        "name": "_lr_goto",
+        "type": "IDENTIFIER",
+        "line": 1137,
+        "column": 1
+    },
+    "_lr_productions": {
+        "name": "_lr_productions",
+        "type": "IDENTIFIER",
+        "line": 1143,
+        "column": 1
+    },
+    "S": {
+        "name": "S",
+        "type": "IDENTIFIER",
+        "line": 1144,
+        "column": 5
+    },
+    "graphviz": {
+        "name": "graphviz",
+        "type": "IDENTIFIER",
+        "line": 1226,
+        "column": 6
+    },
+    "Digraph": {
+        "name": "Digraph",
+        "type": "IDENTIFIER",
+        "line": 1226,
+        "column": 22
+    },
+    "dot": {
+        "name": "dot",
+        "type": "IDENTIFIER",
+        "line": 1243,
+        "column": 14
+    },
+    "comment": {
+        "name": "comment",
+        "type": "IDENTIFIER",
+        "line": 1243,
+        "column": 28
+    },
+    "Abstract": {
+        "name": "Abstract",
+        "type": "IDENTIFIER",
+        "line": 1243,
+        "column": 37
+    },
+    "attr": {
+        "name": "attr",
+        "type": "IDENTIFIER",
+        "line": 1244,
+        "column": 18
+    },
+    "node": {
+        "name": "node",
+        "type": "IDENTIFIER",
+        "line": 1244,
+        "column": 24
+    },
+    "shape": {
+        "name": "shape",
+        "type": "IDENTIFIER",
+        "line": 1244,
+        "column": 31
+    },
+    "box": {
+        "name": "box",
+        "type": "IDENTIFIER",
+        "line": 1244,
+        "column": 38
+    },
+    "style": {
+        "name": "style",
+        "type": "IDENTIFIER",
+        "line": 1244,
+        "column": 44
+    },
+    "filled": {
+        "name": "filled",
+        "type": "IDENTIFIER",
+        "line": 1244,
+        "column": 51
+    },
+    "color": {
+        "name": "color",
+        "type": "IDENTIFIER",
+        "line": 1244,
+        "column": 60
+    },
+    "lightblue": {
+        "name": "lightblue",
+        "type": "IDENTIFIER",
+        "line": 1244,
+        "column": 67
+    },
+    "ast_root": {
+        "name": "ast_root",
+        "type": "IDENTIFIER",
+        "line": 1246,
+        "column": 25
+    },
+    "Traverses": {
+        "name": "Traverses",
+        "type": "IDENTIFIER",
+        "line": 1248,
+        "column": 9
+    },
+    "generates": {
+        "name": "generates",
+        "type": "IDENTIFIER",
+        "line": 1248,
+        "column": 31
+    },
+    "Graphviz": {
+        "name": "Graphviz",
+        "type": "IDENTIFIER",
+        "line": 1248,
+        "column": 43
+    },
+    "graph": {
+        "name": "graph",
+        "type": "IDENTIFIER",
+        "line": 1248,
+        "column": 52
+    },
+    "The": {
+        "name": "The",
+        "type": "IDENTIFIER",
+        "line": 1250,
+        "column": 26
+    },
+    "root": {
+        "name": "root",
+        "type": "IDENTIFIER",
+        "line": 1250,
+        "column": 30
+    },
+    "base": {
+        "name": "base",
+        "type": "IDENTIFIER",
+        "line": 1251,
+        "column": 37
+    },
+    "without": {
+        "name": "without",
+        "type": "IDENTIFIER",
+        "line": 1251,
+        "column": 69
+    },
+    "extension": {
+        "name": "extension",
+        "type": "IDENTIFIER",
+        "line": 1251,
+        "column": 77
+    },
+    "visit": {
+        "name": "visit",
+        "type": "IDENTIFIER",
+        "line": 1253,
+        "column": 14
+    },
+    "render": {
+        "name": "render",
+        "type": "IDENTIFIER",
+        "line": 1255,
+        "column": 22
+    },
+    "format": {
+        "name": "format",
+        "type": "IDENTIFIER",
+        "line": 1255,
+        "column": 55
+    },
+    "cleanup": {
+        "name": "cleanup",
+        "type": "IDENTIFIER",
+        "line": 1255,
+        "column": 69
+    },
+    "saved": {
+        "name": "saved",
+        "type": "IDENTIFIER",
+        "line": 1256,
+        "column": 39
+    },
+    "parent": {
+        "name": "parent",
+        "type": "IDENTIFIER",
+        "line": 1260,
+        "column": 27
+    },
+    "Recursively": {
+        "name": "Recursively",
+        "type": "IDENTIFIER",
+        "line": 1262,
+        "column": 9
+    },
+    "visits": {
+        "name": "visits",
+        "type": "IDENTIFIER",
+        "line": 1262,
+        "column": 21
+    },
+    "adds": {
+        "name": "adds",
+        "type": "IDENTIFIER",
+        "line": 1262,
+        "column": 42
+    },
+    "them": {
+        "name": "them",
+        "type": "IDENTIFIER",
+        "line": 1262,
+        "column": 47
+    },
+    "current": {
+        "name": "current",
+        "type": "IDENTIFIER",
+        "line": 1264,
+        "column": 26
+    },
+    "label": {
+        "name": "label",
+        "type": "IDENTIFIER",
+        "line": 1271,
+        "column": 9
+    },
+    "If": {
+        "name": "If",
+        "type": "IDENTIFIER",
+        "line": 1274,
+        "column": 11
+    },
+    "there": {
+        "name": "there",
+        "type": "IDENTIFIER",
+        "line": 1274,
+        "column": 14
+    },
+    "s": {
+        "name": "s",
+        "type": "IDENTIFIER",
+        "line": 1274,
+        "column": 20
+    },
+    "edge": {
+        "name": "edge",
+        "type": "IDENTIFIER",
+        "line": 1274,
+        "column": 39
+    },
+    "child": {
+        "name": "child",
+        "type": "IDENTIFIER",
+        "line": 1278,
+        "column": 29
+    },
+    "isinstance": {
+        "name": "isinstance",
+        "type": "IDENTIFIER",
+        "line": 1279,
+        "column": 12
+    },
+    "decl": {
+        "name": "decl",
+        "type": "IDENTIFIER",
+        "line": 1280,
+        "column": 17
+    },
+    "arg": {
+        "name": "arg",
+        "type": "IDENTIFIER",
+        "line": 1310,
+        "column": 17
+    },
+    "Leaf": {
+        "name": "Leaf",
+        "type": "IDENTIFIER",
+        "line": 1314,
+        "column": 21
+    },
+    "stmt": {
+        "name": "stmt",
+        "type": "IDENTIFIER",
+        "line": 1320,
+        "column": 17
+    },
+    "Unhandled": {
+        "name": "Unhandled",
+        "type": "IDENTIFIER",
+        "line": 1324,
+        "column": 21
     }
 }
