@@ -37,7 +37,7 @@ reserved = {
     'float': 'FLOAT',
     'if': 'IF',
     'else': 'ELSE',
-    'while': 'WHILE',
+    # 'while': 'WHILE',
     'return': 'RETURN',
 }
 
