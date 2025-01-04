@@ -1,7 +1,7 @@
 # Personal Portfolio Website
 
 ## Overview
-This is the Front-end of the compiler game.
+This is my personal portfolio website built with modern web technologies to showcase my work and skills.
 
 ## Technologies Used
 
