@@ -1,61 +1,97 @@
-# Personal Portfolio Website
+# C-Syntax Adventure 🎮
 
-## Overview
-This is my personal portfolio website built with modern web technologies to showcase my work and skills.
+A retro-themed educational game to learn C programming syntax through interactive challenges.
 
-## Technologies Used
+![C-Syntax Adventure](public/og-image.png)
 
-This project is built with:
+## 🚀 Features
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Progressive Difficulty Levels**: Easy, Medium, and Hard challenges
+- **Interactive Code Editor**: Real-time syntax checking and feedback
+- **Retro UI**: Nostalgic design with modern functionality
+- **Helpful Hints**: Built-in hint system for each challenge
+- **Progress Tracking**: Visual progress bar to track your advancement
+- **Celebration Effects**: Special effects when completing challenges
 
-## Getting Started
+## 🛠️ Tech Stack
 
-To run this project locally, you'll need Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- React + TypeScript
+- Vite for build tooling
+- Tailwind CSS for styling
+- Shadcn/ui for UI components
+- React Confetti for celebrations
 
-Follow these steps:
+## 🏃‍♂️ Getting Started
 
-```sh
-# Step 1: Clone the repository
-git clone <YOUR_GIT_URL>
+### Prerequisites
 
-# Step 2: Navigate to the project directory
-cd <YOUR_PROJECT_NAME>
+- Node.js (v16 or higher)
+- npm or yarn
 
-# Step 3: Install dependencies
-npm i
+### Installation
 
-# Step 4: Start the development server
-npm run dev
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/c-syntax-adventure.git
+   cd c-syntax-adventure
+   ```
 
-## Development Options
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-### Local Development
-Use your preferred IDE by cloning the repository and working locally. The development server includes auto-reloading and instant preview.
+3. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-### GitHub Integration
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
 
-**Direct GitHub Editing**
-- Navigate to the desired file(s)
-- Click the "Edit" button (pencil icon)
-- Make your changes and commit
+## 🎯 How to Play
 
-**GitHub Codespaces**
-- Go to the repository's main page
-- Click "Code" (green button)
-- Select "Codespaces"
-- Click "New codespace" to start coding in the browser
+1. Select your difficulty level (Easy, Medium, or Hard)
+2. Each level presents a C code snippet with syntax errors
+3. Fix the errors in the code editor
+4. Click "Submit" to check your solution
+5. Use hints if you need help
+6. Progress through increasingly challenging levels
 
-## Deployment
+## 📚 Level Structure
 
-This project can be deployed using various platforms like:
-- Netlify
-- Vercel
-- GitHub Pages
+### Easy Mode
+- Basic syntax corrections
+- Simple semicolon and bracket fixes
+- Beginner-friendly challenges
 
-Choose your preferred hosting platform and follow their deployment guidelines.
+### Medium Mode
+- Loop and condition fixes
+- Array indexing challenges
+- Function syntax corrections
+
+### Hard Mode
+- Pointer-related syntax
+- Memory management
+- Complex structure syntax
+
+## 🎨 Customization
+
+The game features a dynamic theme system that changes based on difficulty:
+- Easy: Mint theme
+- Medium: Yellow theme
+- Hard: Red theme
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Inspired by retro gaming aesthetics
+- Built with modern web technologies
+- Special thanks to the open-source community
+
