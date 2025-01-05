@@ -44,6 +44,17 @@ def t_IDENTIFIER(t):
     symbol_table.add_symbol(t.value, t.type, t.lineno, t.column)
     return t
 
+def t_preprocessor(t):
+    r'\#.*'
+    pass  # Ignore preprocessor directives
+
+def t_STRING_LITERAL(t):
+    r'"([^"\\]|\\.)*"'  # Matches string literals with escape sequences
+    t.value = t.value[1:-1]  # Strip surrounding quotes
+    t.column = find_column(t.lexer.lexdata, t)
+    return t
+
+
 def t_FLOAT_LITERAL(t):
     r'\d+\.\d+'
     t.value = float(t.value)

@@ -1,11 +1,9 @@
 # src/parser/parser.py
 
 import ply.yacc as yacc
-from lexer.tokens import tokens  # Import tokens list from lexer/tokens.py
-
-from lexer.error_handler import error_handler  # Import the error handler
-
-from .ast_nodes import (
+from src.lexer.tokens import tokens  # Correct import for tokens
+from src.lexer.error_handler import error_handler  # Correct import for error_handler
+from src.parser.ast_nodes import (  # Import AST nodes
     Program,
     FunctionDeclaration,
     VariableDeclaration,
@@ -13,11 +11,12 @@ from .ast_nodes import (
     ReturnStatement,
     BinaryOperation,
     UnaryOperation,
-    FunctionCall,  # Added
+    FunctionCall,
     Identifier,
     Literal,
-    CompoundStatement
+    CompoundStatement,
 )
+
 
 # Define precedence rules to resolve ambiguities
 precedence = (
@@ -198,6 +197,14 @@ def p_error(p):
         error_handler.add_error('Syntax', f"Syntax error at token '{p.value}'", p.lineno, column)
     else:
         error_handler.add_error('Syntax', "Syntax error at EOF", '?', '?')
+
+def p_expression_string(p):
+    """expression : STRING_LITERAL"""
+    p[0] = Literal(value=p[1])
+
+def p_preprocessor_directive(p):
+    """preprocessor : """
+    pass
 
 # Build the parser
 parser = yacc.yacc()

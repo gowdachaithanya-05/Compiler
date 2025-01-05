@@ -1,7 +1,7 @@
 # src/utils/ast_visualizer.py
 
 from graphviz import Digraph
-from parser.ast_nodes import (
+from src.parser.ast_nodes import (
     Program,
     FunctionDeclaration,
     VariableDeclaration,
@@ -9,11 +9,12 @@ from parser.ast_nodes import (
     ReturnStatement,
     BinaryOperation,
     UnaryOperation,
+    FunctionCall,
     Identifier,
     Literal,
     CompoundStatement,
-    FunctionCall  
 )
+
 
 class ASTVisualizer:
     def __init__(self):
