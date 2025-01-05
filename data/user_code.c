@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main() {
-  int score = 100;
-  if(score >= 90)
-    printf("You win");
+  int x = 5;
+  int y = 10;
+  printf("%d", x + y);
   return 0;
 }

@@ -55,5 +55,10 @@ class ErrorHandler:
             json.dump([err.to_dict() for err in self.errors], jf, indent=4)
         print(f"Errors exported to {file_path}")
 
+    def reset(self):
+        """Reset all errors in the error handler."""
+        self.errors = []
+
+
 # Initialize the error handler
 error_handler = ErrorHandler()

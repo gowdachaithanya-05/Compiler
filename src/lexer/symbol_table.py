@@ -181,3 +181,7 @@ class SymbolTable:
                 indent=4
             )
         print(f"Symbol table exported to {file_path}")
+
+    def reset(self):
+        """Clear all symbols from the table."""
+        self.symbols = {}

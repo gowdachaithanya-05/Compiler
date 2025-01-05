@@ -39,7 +39,11 @@ def generate_ast_image(ast_root, output_path="data/ast_output.png"):
 async def compile_code(request: dict):
     """
     Compile and process the submitted C code using Lexer and Parser.
+
     """
+    error_handler.reset()  # Reset the error handler for fresh processing
+    symbol_table.reset()  # Reset the symbol table
+
     try:
         # Retrieve the submitted code
         code = request.get("code", "")
