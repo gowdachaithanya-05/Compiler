@@ -41,7 +41,7 @@ python src/main.py data/sample_c_codes/example1.c
    > In the `first` terminal : 
    ```
    cd Compiler-Backend
-   pip intall -r requirements.txt
+   pip install -r requirements.txt
    uvicorn api_server.main:app --host 8000 
    ```
 
