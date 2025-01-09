@@ -29,3 +29,28 @@ pip install -r requirements.txt
 Run the main script with a sample C code file as input:
 ```bash
 python src/main.py data/sample_c_codes/example1.c
+```
+
+# REFER THE BELOW INSTRUCTIONS 
+
+1. ```bash```
+   ```
+   git clone https://github.com/gowdachaithanya-05/Compiler.git
+   ```
+2. Open two terminals (if in windows either powershell or wsl)
+   > In the `first` terminal : 
+   ```
+   cd Compiler-Backend
+   pip intall -r requirements.txt
+   uvicorn api_server.main:app --host 8000 
+   ```
+
+   > In the `second` terminal : 
+   ```
+   cd Compiler-Frontend
+   npm i
+   npm install
+   npm run dev
+   ```
+
+   ### Happy ```Hacking``` !!! or should i say ```Compiling``` ;)
